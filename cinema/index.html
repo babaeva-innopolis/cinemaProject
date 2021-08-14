@@ -24,14 +24,14 @@
     <div style="width: 100%;"> 
         <a target="_blank" href="http://university.innopolis.ru" title="Иннополис"><img src="./images/logo281-150x95.png" alt="Логотип Иннополис"></a>
     </div>
-    <nav aria-labelledby="mainmenu">
-        <ul>
+    <nav id="mainmenu">
+        <ul  aria-labelledby="mainmenu">
             <li><a href="tel:+78003551256"><b>+7 (800) 355 12-56</b></a></li>
             <li><a href="mailto:kino@innopolis.ru"><b>kino@innopolis.ru</b></a></li>
             <li><b>ул.Спортивная д.1</b></li>
             <li><button><a href="#"><b>Заказать звонок</b></a></button></li>
         </ul>
-        <ul>
+        <ul aria-labelledby="mainmenu">
             <li><a href="#block1"><b>Почему мы?</b></a></li>
             <li><a href="#block2"><b>Выберите фильм</b> </a></li>
             <li><a href="#block3"><b>Подарок каждому</b></a></li>
@@ -86,36 +86,31 @@
         <h2 id="block2">Выберите фильм</h2>
         <table>
             <thead>
-                <tr>
-                    <th></th>
+                <tr>                    
                     <th>Начало сеанса</th>
                     <th>Название фильма</th>
                     <th>Жанр</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td></td>
+                <tr>                    
                     <td>10:00 </td>
                     <td><a target="_blank" href="https://www.kinopoisk.ru/film/838/" title="Кинопоиск">Человек-паук</a></td>
                     <td>Фантастика, боевик, приключения </td>
                 </tr>
-                <tr>
-                    <td></td>
+                <tr>                   
                     <td>12:00 </td>
                     <td><a target="_blank" href="https://www.kinopoisk.ru/film/1122114/"title="Кинопоиск">Собачья жизнь 2</a></td>
                     <td>Фэнтэзи, драма, комедия</td>
                 </tr>
-                <tr>
-                    <td></td>
+                <tr>                    
                     <td>14:00 </td>
                     <td><a target="_blank" href="https://www.kinopoisk.ru/film/846824/"title="Кинопоиск">История игрушек 4</a></td>
                     <td>Мультфильм, фэнтэзи, комедия</td>
                 </tr>
             </tbody>
             <tfoot>
-                <tr>
-                    <td></td>
+                <tr>                    
                     <td>16:00 </td>
                     <td><a target="_blank" href="https://www.kinopoisk.ru/film/693730/"title="Кинопоиск">Люди в чёрном: Интэрнэшнл</a></td>
                     <td>Фантастика, боевик, комедия</td>
@@ -125,7 +120,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
             ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p></section>
        <div>
-           <h2> <a name="present"></a> Подарок каждому!</h2>
+           <h2 id="block3"> <a name="present"></a> Подарок каждому!</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
          ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam 
          elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas. <br> 
@@ -188,11 +183,12 @@
                  <h2 id="block7">Обратная связь</h2>
             </div>
             <div>
-            <label for="name"></label>   
-            <input type="text" name="name" id="name" required placeholder="Полное имя">
+            <label for="name">Полное имя</label>
+                <input type="text" name="name" id="name" placeholder="Полное имя" required>
             </div>
             <div>
-               <select name="place" required placeholder="Номер места">
+                <label for="place">Выбери место</label>
+               <select name="place" id="place" placeholder="Номер места" required>
                    <optgroup label="Name1">
                        <option value="">Номер места</option>
                        <option value="1">1</option>
@@ -208,19 +204,19 @@
                 </select>
             </div>
             <div>
-                <textarea name="review" id="" placeholder="Напишите свой отзыв"></textarea>
+                <label for="review">Отзыв</label>
+                <textarea name="review" id="review" placeholder="Напишите свой отзыв"></textarea>
             </div>
             <div>
-                <label for="mail"></label>
-                <input type="email" name="mail" required placeholder="Напишите свой @">
+                <label for="mail">Электронная почта</label>
+                <input type="email" name="mail" id="mail" placeholder="Напишите свой @" required>                
             </div>
             <div>
                 <input type="checkbox" id="checkbox">
                 <label for="checkbox">Я согласен на обработку своих персональных данных</label>
             </div>
             <div>
-                <label for="file"></label>
-                <input type="file">
+                <label><input type="file">Загрузить файл</label>                
             </div> 
             <p><input type="submit" value="Заказать"></p>
         </form>
@@ -260,7 +256,7 @@
         <li>Четвертый</li>
         <li>Пятый</li>
     </ul>
-    <footer>Copyright  @ 2020 Innopolis University . All Rights Reserved.</footer>
+    <footer>Copyright  @ 2020 Innopolis University . All Rights Reserved.</footer>    
  </body>
 </html>
 
