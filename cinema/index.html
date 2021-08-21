@@ -7,51 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Продажа билетов в кино в Иннополисе</title>
      <style>
-         *{
-             font-size: 40px;
-        }
-        h2{
-            font-family: 'IBM-Plex-Sans';
-             font-style: normal;
-             font-weight: 500;
-             color: #A3CC40;
-        }
-        #block2{
-            font-size: 48px;
+         body{
+             font-family: 'IBM-Plex-Sans' sans-serif;
+         }
+                 /* #block2{           
              line-height: 62px;  
-             box-sizing: border-box;
-             width: 500px;
+             box-sizing: border-box;            
              margin-bottom: 93px;             
-        }
+        } */
+        @font-face{
+              font-family: 'IBM-Plex-Sans' sans-serif;
+              src: url(./fonts/IBMPlexSans-Thin.ttf);
+              font-style: normal;
+              
+         }
+        @font-face{
+              font-family: 'IBM-Plex-Sans' sans-serif;
+              src: url(./fonts/IBMPlexSans-Regular.ttf);
+              font-style:normal; 
+              
+                         
+          }
+        @font-face{
+              font-family: 'IBM-Plex-Sans'sans-serif;
+              src: url(./fonts/IBMPlexSans-Medium.ttf);
+              font-style: normal;
+               
+                                     
+          }
           @font-face {
-             font-family: 'IBM-Plex-Sans';
-             src: url(../cinema/fonts/IBMPlexSans-Thin.ttf);
-             font-style: normal;
-             font-weight: 100;
-         }
-         @font-face {
-             font-family: 'IBM-Plex-Sans'sans-serif;
-             src: url(../cinema/fonts/IBMPlexSans-Regular.ttf);
-             font-style: normal;
-             font-weight: 400;
-         }
-         @font-face {
-             font-family: 'IBM-Plex-Sans'sans-serif;
-             src: url(../cinema/fonts/IBMPlexSans-Medium.ttf);
-             font-style: normal;
-             font-weight: 500;
-         }
-         @font-face {
-             font-family: 'IBM-Plex-Sans'sans-serif;
-             src: url(../cinema/fonts/IBMPlexSans-SemiBold.ttf);
-             font-style: normal;
-             font-weight: 600;
-         }
-         .logo{
-             width: 156px;
-             height: 40px;
-         }
-        td {
+              font-family: 'IBM-Plex-Sans' sans-serif;
+              src: url(./fonts/IBMPlexSans-SemiBold.ttf);
+              font-style: normal; 
+                   
+          }
+          td {
             width: 849px;
             height: 45px;
             text-align: left;
@@ -65,18 +55,12 @@
          table {
             width: 100%; 
             border-collapse: collapse;
-            left: 138px;
-            top: 1838px;
-         }
-         .movie-table_row{
-             margin: 0 -15px;             
+           /* margin: auto; */
          }
          .movie-table_row-cell{
-             background: #A3CC40;
-             box-sizing: border-box;
+             background: #A3CC40;             
              padding: 0 15px;
              left: 45.11;
-             font-family: 'IBM-Plex-Sans'; 
              font-weight: 600;
              color: #FFFFFF;
              line-height: 26px;
@@ -86,8 +70,7 @@
              background: #373737;
              box-sizing: border-box;
              padding: 0 15px;
-             left: 45.11;
-             font-family: 'IBM-Plex-Sans'; 
+             left: 45.11;             
              font-weight: 400;
              color: #FFFFFF;
          }
@@ -95,182 +78,431 @@
              background: #4C4D4F;
              box-sizing: border-box;
              padding: 0 15px;
-             left: 45.11;
-             font-family: 'IBM-Plex-Sans'; 
+             left: 45.11;             
              font-size: 400; 
              color: #FFFFFF;
          }
-         .container{
-            padding: 0px 135px;
-            margin: 0px auto;
-            box-sizing: border-box;
-            width: 100%;
-
-        }
-        .movie-table{
-            margin: 0mm -15px;
-        }
+                
         .check{
-            margin: 89px;
-            width: 10.03px;
+           width: 10.03px;
             height: 7.94px;
             left: 24.79;            
-        }     
+        } 
+        .logo{
+             width: 156px; 
+             height: 39px;                
+             /* left: 89px;
+             top: 51.47px;             */
+         }
+        .block01{
+            background-color: rgb(150, 150,0);
+            background: url(./images/cinema_hall1.jpg);            
+            min-height: 100vh;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%); 
+           
+        } 
+        .block01__row{
+            margin: 0 -15px; 
+           
+                     
+        }
+        .container{
+            padding: 0 15px;
+            max-width: 1124px;
+            margin: 0 auto;
+        }
+        .block01__col1{
+            float: left;
+            padding: 57px 22px 0 87px;
+            width: 21%;
+            box-sizing: border-box;                        
+        }
+        .block01__col2{
+            float: left;
+            padding: 53px  15px 0 15px;
+            width: 79%;
+            box-sizing: border-box;            
+        }
+      
+        .link-white {
+            display: inline-block;
+            color: #FFFFFF;
+            font-size: 12px;
+            font-weight:500;   
+            transition: 0.2s;         
+        }
+        .link-white:hover{
+            color: #A3CC40;
+        }
+        .block01__call {
+            display: inline-block;
+            background: #FFFFFF;
+            padding: 1px 9 px 5px;
+            border-radius: 6px;   
+            border: 2px solid #fff;
+            transition: 0.2s;         
+        }
+        .block01__call span{
+            color: #333;            
+            font-size: 12px;
+            display: inline-block;
+            transition: 0.2s;
+        }
+        .block01__call svg{
+            fill: #333;
+            display: inline-block;
+            transition: 0.2s;
+        }
+        .block01__call:hover{
+            border-color: #EAEDE2;
+            background: #A3CC40;
+        }
+        .block01__call:hover svg{
+            fill: @fff;
+        }
+        .block01__call:hover span{
+            color: @fff;
+        }
+        .block01__tel,
+        .block01__mail,
+        .block01__address, 
+        .block01__call {
+            margin-right: 50px;
+        }
+        .block01__lng-wrap {
+            position: relative;
+            display: inline-block;
+        }
+        .block01__lng {
+            color: #FFFFFF;
+            font-size:  12px;            
+        }
+        .block01__lng svg {
+            fill: #FFFFFF;
+            transition: 0.2s;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .block01__dropdown {
+            visibility: hidden;
+            opacity: 0;
+            transition: .2s;
+            background: #666;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transform: translateY(100%);
+        }
+        .block01__dropdown a {
+            display: table;
+            color: #FFFFFF;
+            font-size: 12px;
+            padding: 5px;
+        }
+        .block01__lng-wrap:hover .block01__dropdown{
+            visibility:visible;
+            opacity: 1;
+        }
+        .block01__lng-wrap:hover .block01__lng svg{
+            transform: rotate(180deg);
+
+        }
+        .link-white {
+            display:inline-block;
+            color: #FFFFFF;
+            font-size:12px;
+            font-weight:500;
+            margin-right:30px;
+        } 
+        .link-white_big{
+            text-transform: uppercase;
+        }      
+        .blok01__ul li{
+            display: inline-block;            
+            
+        } 
+        .relative{
+            position: relative;
+        } 
        
+        .block02{
+            margin: 15px;
+        }
+        .block02__inner{
+            background: #FFFFFF;
+            padding: 30;
+            border-radius: 15;
+            position: absolute;
+            max-width: 50%;
+            right: 0;
+            top: 0;
+            transform: translateX(-50%);
+        }
+        .block02__row {
+            margin: 0 -15px;
+            overflow: hidden; 
+        }  
+        .block02_col1,
+        .block02_col2{
+            display: inline;
+            width: 940px;
+            padding: 0 15 px;
+            box-sizing: border-box;
+        }
+        .block02__visit-card{
+            box-sizing: border-box;
+            padding: 0 15px;
+            width: 33.33%;
+            float: left;       
+        }
+        .block03__header{
+            box-sizing: border-box;
+            float: left;
+            left: auto;
+
+        } 
+        .block01__main {
+            position: absolute;
+            top: 228px;
+           text-align: center;
+           margin: auto;
+           width: 100%;
+
+        }
+        .block01__main-1 {
+            color: #FFFFFF;
+            font-size: 68px;
+            font-weight: 100;
+            line-height: 1.1;
+            margin-bottom: 84px;
+        }
+        .block01__main-2{
+            color: #FFFFFF;
+            font-size: 41px;
+            font-weight: 400;
+            line-height: 1.1;
+          }
+        .header{
+            color: #A3CC40;
+            font-size: 48px;
+            font-weight: 500;
+            line-height: 1.1;
+            margin-bottom: 84px;
+
+        }
+
      </style>
 </head>
 <body>
-    <div>
-        <svg class="logo">       
-            <a  xlink:href="http://university.innopolis.ru" target="_blank" title="Иннополис">
-                <use xlink:href="#ico-logo">
-                </use>  
-            </a>  
-        </svg>
+    <div class="block01">
+        <div class="container container_wide">
+            <header class="block01__header">
+                <div class="block01__row">
+                    <div class="block01__col1">
+                        <svg class="logo">       
+                            <a  xlink:href="http://university.innopolis.ru" target="_blank" title="Иннополис">
+                                <use xlink:href="#ico-logo">
+                                </use>  
+                            </a>  
+                        </svg>
+                    </div>
+                    <div class="block01__col2">
+                        <div class="block01__Line1">
+                            <a class="block01__tel link-white" href="tel:+78003551256"><b>+7 (800) 355 12-56</b></a>
+                            <a class="block01__mail link-white" href="mailto:kino@innopolis.ru"><b>kino@innopolis.ru</b></a>
+                            <p class="block01__address link-white">ул.Спортивная д.1</p>  
+                            <a href="#" class="block01__call" >
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.67222 7.98889C4.1 7.18333 2.81111 5.9 2.01111 4.32778L3.12371 3.49804C3.44322 3.25977 3.59072 2.85451 3.49912 2.4666L3.09853 0.770184C2.99196 0.318844 2.58905 0 2.1253 0H0.555556C0.25 0 0 0.25 0 0.555556C0 5.77222 4.22778 10 9.44444 10C9.75 10 10 9.75 10 9.44444V7.87332C10 7.4102 9.68201 7.00767 9.23146 6.90048L7.53545 6.49696C7.14653 6.40442 6.73987 6.55242 6.50139 6.87328L5.67222 7.98889Z" fill="#333333"/>
+                                    </svg> 
+                                <span>Заказать звонок</span>
+                            </a>
+                            <div class="block01__lng-wrap">
+                                <a href="#" class="block01__lng">
+                                    <span>RU</span>
+                                    <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.00406 3.8728L0.824164 0.692904L1.38985 0.127219L4.00406 2.74143L6.61827 0.127219L7.18396 0.692905L4.00406 3.8728Z" fill="white"/>
+                                        </svg>                                        
+                                </a>
+                                <div class="block01__dropdown"> 
+                                    <a href="#">EN</a>
+                                    <a href="#">RU</a>
+                                </div>
+                            </div>
+                        </div>
+                        <nav class="block01__nav" id="mainmenu">
+                            <ul class="blok01__ul" aria-labelledby="mainmenu">                                
+                                <li><a class="link-white link-white_big" href="#block1"><b>Выберите фильм</b> </a></li>                                
+                                <li><a class="link-white link-white_big" href="#block2"><b>Фильмы</b> </a></li>
+                                <li><a class="link-white link-white_big" href="#block3"><b>Товары</b> </a></li>
+                                <li><a class="link-white link-white_big" href="#block4"><b>Отзывы</b> </a></li>
+                                <li><a class="link-white link-white_big" href="#block5"><b>Обратная связь</b> </a></li>
+                            </ul>
+                        </nav>
+                    </div>                    
+                </div>
+                <div class="block01__main">
+                    <p class="block01__main-1">Закажите билет в кино</p>
+                    <p class="block01__main-2"> Всем покупателям подарок!</p>
+                </div>
+            </header>            
+         </div>
     </div>
-    <nav id="mainmenu" style="padding: 20px; display: inline-block;">
-        <ul  aria-labelledby="mainmenu">
-            <li><a href="tel:+78003551256"><b>+7 (800) 355 12-56</b></a></li>
-            <li><a href="mailto:kino@innopolis.ru"><b>kino@innopolis.ru</b></a></li>
-            <li><b>ул.Спортивная д.1</b></li>
-            <li><button><a href="#"><b>Заказать звонок</b></a></button></li>
-        </ul>
-        <ul aria-labelledby="mainmenu">
-            <li><a href="#block1"><b>Почему мы?</b></a></li>
-            <li><a href="#block2"><b>Выберите фильм</b> </a></li>
-            <li><a href="#block3"><b>Подарок каждому</b></a></li>
-            <li><a href="#block4"><b>Фильмы</b> </a></li>
-            <li><a href="#block5"><b>Товары</b> </a></li>
-            <li><a href="#block6"><b>Отзывы</b> </a></li>
-            <li><a href="#block7"><b>Обратная связь</b> </a></li>
-        </ul>
-    </nav>
-    <section class="container">
-        <h1>Закажите билет в кино</h1>
-        <h2> Всем покупателям подарок</h2>
-        <h3>Добро пожаловать!</h3>
-        <p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-       incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</b><br> 
-       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-         eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt.</p>
-    </section>   
-    <section class="container">
-        <h3 id="block1">Почему мы?</h3> 
-        <div >
-            <img src="./images/3yoqeQbkSg8 1.png" alt="Большой экран"/><b>Большие экраны</b>
-            <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam.</blockquote>
+    <div class="block02">
+        <div class="container relative">
+            <div class="block02__inner">
+                <div class="block02__info">
+                    <p class="block02__text1">Добро пожаловать!</p>
+                    <p class="block02__text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p><br>
+                    <p class="block02__text1"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt.</p>
+                </div>
+            </div>
         </div>
-        <div>
-            <img src="./images/obemniy_zvuk-1200x900 1.png" alt="Динамики"/><b>Объёмный звук</b>
-            <p><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam.</q></p>
+        <div class="container">
+            <div class="block02__row">
+                <p class="header block02__header">Почему мы?</p>
+                <div class="block02__col1">
+                    <div class="block02__visit-card"><img src="./images/3yoqeQbkSg8 1.png" alt="Большой экран"/><b>Большие экраны</b>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                    <div class="block02__visit-card"><img src="./images/obemniy_zvuk-1200x900 1.png" alt="Динамики"/><b>Объёмный звук</b>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                    <div class="block02__visit-card"><img src=".//images/unnamed 1.png" alt="Зрительский зал"/><b>Удобные кресла</b>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                </div>
+                <div class="block02_col1">
+                    <div class="block02__visit-card"><img src="./images/VXhJVtytwj8 1.png" alt=""/><b>Уютная атмосфера</b>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                    <div class="block02__visit-card"><img src="./images/72_osn1 1.png" alt="3Д"/><b>Полное погружение</b>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam.  </p>
+                    </div>
+                    <div class="block02__visit-card"><img src="./images/maxresdefault 1.png" alt="Места для влюбленных"/><b>Поцелуи на заднем ряду</b>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam.  </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <img src=".//images/unnamed 1.png" alt="Зрительский зал"/><b>Удобные кресла</b>
-            <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam.</i></p>
-        </div>
-        <div><img src="./images/VXhJVtytwj8 1.png" alt=""/><b>Уютная атмосфера</b>
-            <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam.</i> </p>
-        </div>
-        <div>
-            <img src="./images/72_osn1 1.png" alt="3Д"/><b>Полное погружение</b>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam.  </p>
-        </div>
-        <div>
-            <img src="./images/maxresdefault 1.png" alt="Места для влюбленных"/><b>Поцелуи на заднем ряду</b>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam.  </p>
+    </div>
+    <section class="Block03">
+        <div class="container">
+            <div class="Block03__row">
+                <div><p class="header block03__header" id="block1">Выберите фильм</p>
+                </div>
+                <table class="movie-table">
+                    <thead>
+                        <tr class="movie-table_row"> 
+                            <th style="border-radius: 10px 0 0 0;" class="movie-table_row-cell"><img src="./images/Rectangle 2 (Stroke).png" alt="галочка" class="check"></th>
+                            <th class="movie-table_row-cell">Начало сеанса</th>
+                            <th class="movie-table_row-cell">Название фильма</th>
+                            <th style="border-radius: 0 10px 0 0;"class="movie-table_row-cell">Жанр</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="movie-table_row">    
+                            <td class="movie-table_row-cell1"><img src="./images/Rectangle 2 (Stroke).png" alt="галочка" class="check"></td>                                                     
+                            <td class="movie-table_row-cell1">10:00 </td>
+                            <td class="movie-table_row-cell1"><a target="_blank" href="https://www.kinopoisk.ru/film/838/" title="Кинопоиск" style="color: #FFFFFF; text-decoration: none;">Человек-паук</a></td>
+                            <td class="movie-table_row-cell1">Фантастика, боевик, приключения </td>
+                        </tr>
+                        <tr class="movie-table_row">   
+                            <td class="movie-table_row-cell2"><img src="./images/Rectangle 2 (Stroke).png" alt="галочка" class="check"></td>                                
+                            <td class="movie-table_row-cell2">12:00 </td>
+                            <td class="movie-table_row-cell2"><a  target="_blank" href="https://www.kinopoisk.ru/film/1122114/"title="Кинопоиск" style="color: #FFFFFF; text-decoration: none;">Собачья жизнь 2</a></td>
+                            <td class="movie-table_row-cell2">Фэнтэзи, драма, комедия</td>
+                        </tr>
+                        <tr class="movie-table_row">  
+                            <td class="movie-table_row-cell1"><img src="./images/Rectangle 2 (Stroke).png" alt="галочка" class="check"></td> 
+                            <td class="movie-table_row-cell1">14:00</td>
+                            <td class="movie-table_row-cell1"><a  target="_blank" href="https://www.kinopoisk.ru/film/846824/"title="Кинопоиск" style="color: #FFFFFF; text-decoration: none;">История игрушек 4</a></td>
+                            <td class="movie-table_row-cell1">Мультфильм, фэнтэзи, комедия</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr class="movie-table_row">     
+                            <td style="border-radius: 0 0 0 10px;" class="movie-table_row-cell2"><img src="./images/Rectangle 2 (Stroke).png" alt="галочка" class="check"></td>                                                  
+                            <td class="movie-table_row-cell2">16:00 </td>
+                            <td class="movie-table_row-cell2"><a  target="_blank" href="https://www.kinopoisk.ru/film/693730/"title="Кинопоиск" style="color: #FFFFFF; text-decoration: none;">Люди в чёрном: Интэрнэшнл</a></td>
+                            <td style="border-radius: 0 0 10px 0;" class="movie-table_row-cell2">Фантастика, боевик, комедия</td>
+                        </tr>  
+                    </tfoot>
+                </table>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
+            </div>
+         </div>  
+    </section>
+    <section class="block04">
+        <div class="block04__row">
+            <div class="container">
+                <h2> <a name="present"></a> Подарок каждому!</h2>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+              ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam 
+              elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas. <br> 
+             Nunc vel risus commodo viverra maecenas accumsan. Morbi enim nunc faucibus a. Mauris commodo 
+             quis imperdiet massa.Sed elementum tempus egestas sed sed risus pretium quam vulputate. Aliquam 
+             vestibulum morbi blandit cursus risus at ultrices mi tempus. <br>
+             Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. 
+             Ut pharetra sit amet aliquam id diam maecenas. Sed elementum tempus egestas sed sed risus pretium
+              quam vulputate. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Facilisi 
+              cras fermentum odio eu feugiat pretium nibh. Eu nisl nunc mi ipsum. Nibh sit amet commodo 
+              nulla facilisi nullam vehicula ipsum.</p>
+             <button>Получить подарок</button>
+            </div>
         </div>
     </section>
-    <section class="container">
-        <h2 id="block2">Выберите фильм</h2>
-        <table class="movie-table">
-            <thead>
-                <tr class="movie-table_row"> 
-                    <th style="border-radius: 10px 0 0 0;" class="movie-table_row-cell"><img src="./images/Rectangle 2 (Stroke).png" alt="галочка" class="check"></th>
-                    <th class="movie-table_row-cell">Начало сеанса</th>
-                    <th class="movie-table_row-cell">Название фильма</th>
-                    <th style="border-radius: 0 10px 0 0;"class="movie-table_row-cell">Жанр</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="movie-table_row">    
-                    <td class="movie-table_row-cell1"><img src="./images/Rectangle 2 (Stroke).png" alt="галочка" class="check"></td>                                                     
-                    <td class="movie-table_row-cell1">10:00 </td>
-                    <td class="movie-table_row-cell1"><a target="_blank" href="https://www.kinopoisk.ru/film/838/" title="Кинопоиск" style="color: #FFFFFF; text-decoration: none;">Человек-паук</a></td>
-                    <td class="movie-table_row-cell1">Фантастика, боевик, приключения </td>
-                </tr>
-                <tr class="movie-table_row">   
-                    <td class="movie-table_row-cell2"><img src="./images/Rectangle 2 (Stroke).png" alt="галочка" class="check"></td>                                
-                    <td class="movie-table_row-cell2">12:00 </td>
-                    <td class="movie-table_row-cell2"><a  target="_blank" href="https://www.kinopoisk.ru/film/1122114/"title="Кинопоиск" style="color: #FFFFFF; text-decoration: none;">Собачья жизнь 2</a></td>
-                    <td class="movie-table_row-cell2">Фэнтэзи, драма, комедия</td>
-                </tr>
-                <tr class="movie-table_row">  
-                    <td class="movie-table_row-cell1"><img src="./images/Rectangle 2 (Stroke).png" alt="галочка" class="check"></td> 
-                    <td class="movie-table_row-cell1">14:00</td>
-                    <td class="movie-table_row-cell1"><a  target="_blank" href="https://www.kinopoisk.ru/film/846824/"title="Кинопоиск" style="color: #FFFFFF; text-decoration: none;">История игрушек 4</a></td>
-                    <td class="movie-table_row-cell1">Мультфильм, фэнтэзи, комедия</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr class="movie-table_row">     
-                    <td style="border-radius: 0 0 0 10px;" class="movie-table_row-cell2"><img src="./images/Rectangle 2 (Stroke).png" alt="галочка" class="check"></td>                                                  
-                    <td class="movie-table_row-cell2">16:00 </td>
-                    <td class="movie-table_row-cell2"><a  target="_blank" href="https://www.kinopoisk.ru/film/693730/"title="Кинопоиск" style="color: #FFFFFF; text-decoration: none;">Люди в чёрном: Интэрнэшнл</a></td>
-                    <td style="border-radius: 0 0 10px 0;" class="movie-table_row-cell2">Фантастика, боевик, комедия</td>
-                </tr>  
-            </tfoot>
-        </table>
+    <div class="block05">
+        <div class="container">
+            <article ><p class="header block05__header" id="block2" >Фильмы</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
-    </section>
-       <div class="container">
-           <h2 id="block3"> <a name="present"></a> Подарок каждому!</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-         ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam 
-         elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas. <br> 
-        Nunc vel risus commodo viverra maecenas accumsan. Morbi enim nunc faucibus a. Mauris commodo 
-        quis imperdiet massa.Sed elementum tempus egestas sed sed risus pretium quam vulputate. Aliquam 
-        vestibulum morbi blandit cursus risus at ultrices mi tempus. <br>
-        Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. 
-        Ut pharetra sit amet aliquam id diam maecenas. Sed elementum tempus egestas sed sed risus pretium
-         quam vulputate. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Facilisi 
-         cras fermentum odio eu feugiat pretium nibh. Eu nisl nunc mi ipsum. Nibh sit amet commodo 
-         nulla facilisi nullam vehicula ipsum.</p>
-        <button>Получить подарок</button>
-    </div>
-    <article class="container"><h2 id="block4" >Фильмы</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-        ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel 
-        quam elementum pulvinar etiam non quam.</p>
-    </article>
-    <div>
-        <h3>Выживший</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-        ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel 
-        quam elementum pulvinar etiam non quam.</p>
-    </div>
-    <section class="container">
-        <h2 id="block5" >Товары</h2>
+                ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel 
+                quam elementum pulvinar etiam non quam.</p>
+            </article>
+            <div>
+                <h3>Выживший</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel 
+                quam elementum pulvinar etiam non quam.</p>
+            </div>
+        </div>        
+    </div>  
+    <section class="block06">
+        <div class="container">
+            <div class="block06__col1">
+                <p class="header block06__header" id="block3" >Товары</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
         ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel 
          quam elementum pulvinar etiam non quam.</p>
-         <ul>
-             <il>Coca-cola</il>   
-            <il>Брелок “Железный человек”</il>
-            <il>Постер “Мстители”</il> 
-        </ul>
+            </div>
+            <div class="block06__col1">
+                <div><p>Coca-cola</p></div>
+                <div><p>Брелок “Железный человек”</p></div>
+                <div><p>Постер “Мстители”</p> </div>
+            </div>
+        </div>
+        
     </section>       
-    <section class="container">
-        <h2 id="block6">Отзывы</h2>
+    <section class="blook07">
+        <div class="container">
+            <div>
+                <p class="header block07__header" id="block4">Отзывы</p>
          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
            ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel 
             quam elementum pulvinar etiam non quam.</p>
+            </div>
             <article>
                 <h3>Елена Еленова</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
@@ -286,62 +518,71 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
              ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
         </article> 
+        </div>
     </section>
-    <section class="container">
-        <form action="order.php"> 
-             <div>
-                 <h2 id="block7">Обратная связь</h2>
+    <section class="block08">
+        <div class="container">
+            <div class="block08__feedback">
+                <form action="order.php"> 
+                    <div>
+                        <h2 id="block5">Обратная связь</h2>
+                   </div>
+                   <div>
+                   <label for="name">Полное имя</label>
+                       <input type="text" name="name" id="name" placeholder="Полное имя" required>
+                   </div>
+                   <div>
+                       <label for="place">Выбери место</label>
+                      <select name="place" id="place" placeholder="Номер места" required>
+                          <optgroup label="Name1">
+                              <option value="">Номер места</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                           </optgroup>
+                       </select>
+                   </div>
+                   <div>
+                       <label for="review">Отзыв</label>
+                       <textarea name="review" id="review" placeholder="Напишите свой отзыв"></textarea>
+                   </div>
+                   <div>
+                       <label for="mail">Электронная почта</label>
+                       <input type="email" name="mail" id="mail" placeholder="Напишите свой @" required>                
+                   </div>
+                   <div>
+                       <input type="checkbox" id="checkbox">
+                       <label for="checkbox">Я согласен на обработку своих персональных данных</label>
+                   </div>
+                   <div>
+                       <label><input type="file">Загрузить файл</label>                
+                   </div> 
+                   <p><input type="submit" value="Заказать"></p>
+               </form>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                   labore et dolore magna aliqua. Ut enim ad minim veniam</p>
             </div>
-            <div>
-            <label for="name">Полное имя</label>
-                <input type="text" name="name" id="name" placeholder="Полное имя" required>
+            <div class="block08__map">
+
             </div>
-            <div>
-                <label for="place">Выбери место</label>
-               <select name="place" id="place" placeholder="Номер места" required>
-                   <optgroup label="Name1">
-                       <option value="">Номер места</option>
-                       <option value="1">1</option>
-                       <option value="2">2</option>
-                       <option value="3">3</option>
-                       <option value="4">4</option>
-                       <option value="5">5</option>
-                       <option value="6">6</option>
-                       <option value="7">7</option>
-                       <option value="8">8</option>
-                       <option value="9">9</option>
-                    </optgroup>
-                </select>
-            </div>
-            <div>
-                <label for="review">Отзыв</label>
-                <textarea name="review" id="review" placeholder="Напишите свой отзыв"></textarea>
-            </div>
-            <div>
-                <label for="mail">Электронная почта</label>
-                <input type="email" name="mail" id="mail" placeholder="Напишите свой @" required>                
-            </div>
-            <div>
-                <input type="checkbox" id="checkbox">
-                <label for="checkbox">Я согласен на обработку своих персональных данных</label>
-            </div>
-            <div>
-                <label><input type="file">Загрузить файл</label>                
-            </div> 
-            <p><input type="submit" value="Заказать"></p>
-        </form>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-            labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+
+        </div>
+       
     </section> 
     <section class="container">
         <h3>SITE</h3>
         <ul>
-            <li><a href="#block2"><b>Выберите фильм</b> </a></li>
-            <li><a href="#block3"><b>Подарок каждому</b></a></li>
-            <li><a href="#block4"><b>Фильмы</b> </a></li>
-            <li><a href="#block5"><b>Товары</b> </a></li>
-            <li><a href="#block6"><b>Отзывы</b> </a></li>
-            <li><a href="#block7"><b>Обратная связь</b> </a></li>
+            <li><a href="#block1"><b>Выберите фильм</b> </a></li>            
+            <li><a href="#block2"><b>Фильмы</b> </a></li>
+            <li><a href="#block3"><b>Товары</b> </a></li>
+            <li><a href="#block4"><b>Отзывы</b> </a></li>
+            <li><a href="#block5"><b>Обратная связь</b> </a></li>
         </ul> 
         <h3>CONTACT</h3>
         <ul>
