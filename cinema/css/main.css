@@ -1,5 +1,5 @@
         
-@font-face {
+/* @font-face {
     font-family: "IBM-Plex-Sans";
     src: url(../fonts/IBMPlexSans-Thin.ttf);
     font-style: normal;
@@ -22,7 +22,7 @@
     src: url(../fonts/IBMPlexSans-SemiBold.ttf);
     font-style: normal; 
     font-weight: 600;              
-}
+} */
 body {
   font-family: "IBM-Plex-Sans";
   margin: 0;
@@ -259,6 +259,7 @@ td {
   box-sizing: border-box;
   font-weight: 400;
   font-size: 14px; 
+  vertical-align: top;
 }
 th {
   background: #A3CC40;
@@ -266,6 +267,7 @@ th {
     box-sizing: border-box;
   font-weight: 600;
   font-size: 20px;
+  text-align: center;
 }
 table {
   width: 849px; 
@@ -273,7 +275,12 @@ table {
   margin-bottom: 15px;   
        
 }
-.movie-table__row-cell{
+.movie-table__sorting{
+  text-decoration:none;
+  color: #FFFFFF;
+   line-height: 26px;
+}
+.movie-table__row-cell {
    background: #A3CC40;             
    color: #FFFFFF;
    line-height: 26px;
@@ -281,7 +288,7 @@ table {
    
 }
 .movie-table__row-cell1{
-   background: #373737;
+   background: #6c6c6c;
    color: #FFFFFF;
     line-height: 18px;
 }
