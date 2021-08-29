@@ -253,7 +253,7 @@ body {
   display: block;
 
 }
-td {
+.table-tbody {
   height: 45px;
   text-align: left;
   box-sizing: border-box;
@@ -261,7 +261,7 @@ td {
   font-size: 14px; 
   vertical-align: top;
 }
-th {
+.table-thead {
   background: #A3CC40;
    height: 45px;
     box-sizing: border-box;
