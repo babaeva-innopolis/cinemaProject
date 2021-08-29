@@ -57,7 +57,7 @@ body {
   font-size: 48px;
   font-weight: 500;
   line-height: 1.1;
-  margin-bottom: 84px;
+  margin-bottom: 87px;
 
 }
 .link-white {
@@ -244,12 +244,12 @@ body {
   overflow: hidden;
 }
  .block03__text{
-  max-width: 664px;
+ 
   font-weight: 400;
   font-size: 11px;
-  margin: 24px auto 0;
-  text-align: center;
-  line-height: 22.4px; 
+  margin: 27px auto 0;
+ 
+  line-height: 15.4px; 
   display: block;
 
 }
@@ -275,7 +275,6 @@ table {
 }
 .movie-table__row-cell{
    background: #A3CC40;             
-   /* padding: 0 15px; */
    color: #FFFFFF;
    line-height: 26px;
    text-align: center;
@@ -283,21 +282,19 @@ table {
 }
 .movie-table__row-cell1{
    background: #373737;
-    /* padding: 0 15px; */
-    color: #FFFFFF;
+   color: #FFFFFF;
     line-height: 18px;
 }
 .movie-table__row-cell2{
    background: #4C4D4F;
-   /* padding: 0 15px; */
-   color: #FFFFFF;
+  color: #FFFFFF;
    line-height: 18px;
 }      
 .check{
  width: 10.03px;
   height: 7.94px;
   left: 25.79; 
-  padding: 0 25px;           
+  padding: 0 45px 0 25px;           
 } 
 /* четверная страница-подарок каждому */
 .block04{
