@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Требуется указать title -->
+    <title>2.7 PET project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pseudo.css">
+    <link rel="stylesheet" href="css/icons.css">
+</head>
+
+<body>
+    <!-- Псевдоклассы ссылок-->
+    <a href="#1" data-customer="roga_i_kopita ostap">Рога и копыта Остап</a>
+    <a href="#2" data-customer="ostap i_komanda ">Остап и команда</a>
+    <a href="#3" data-customer="antilopa">Антилопа Гну</a>
+    <!-- Попробуйте поставить одинаковые ссылки -->
+
+    <!-- Использование псевдоклассов совместно с классами-->
+    <a class='button' href='nowhere.html'>Button One</a>
+    <a class='button' href='nowhere.html'>Button Two</a>
+
+    <!-- Класс button универсальный, можно применить к любому элементу-->
+
+    <span class='button' href='nowhere.html'>Button Two</span>
+
+    <!-- Псевдоклассы для структуры -->
+
+    <!-- last of type -->
+    <div class="articles">
+        <p class="description">
+            Первый
+        </p>
+        <p class="description">
+            Второй
+        </p>
+        <p class="description">
+            Третий
+        </p>
+        <span class="description">
+            Четвертый
+        </span>
+    </div>
+
+    <!-- Работает во всех контейнерах -->
+    <div class="articles">
+        <p class="description">
+            Первый
+        </p>
+        <p class="description">
+            Второй
+        </p>
+        <p class="description">
+            Третий
+        </p>
+        <span class="description">
+            Четвертый
+        </span>
+    </div>
+
+    <!-- first of type -->
+
+    <!-- first-child -->
+    <!-- last-child -->
+    <!-- nth-child()-->
+    <!-- a:not(.name) -->
+
+    <!-- псевдоэлементы -->
+    <!-- ::before -->
+    <!-- ::after -->
+
+    <p class=article>
+            This is a somewhat long HTML
+            paragraph that will be broken into several
+            lines. The first line will be identified
+            by a fictional tag sequence. The other lines
+            will be treated as ordinary lines in the
+            paragraph.
+    </p>
+</body>
+
+</html>

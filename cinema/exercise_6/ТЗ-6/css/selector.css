@@ -1,0 +1,123 @@
+h2 {
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+
+.description {
+    color: blue;
+}
+
+.emphasized-description {
+    text-decoration: underline;
+    /* color: red; */
+}
+
+#thought {
+    color: yellow;
+}
+
+#idea {
+    text-decoration: underline;
+}
+
+#mistake {
+    text-decoration: line-through;
+    color: red;
+}
+
+/** This is not good */
+/* p.description {
+    color: cyan;
+} */
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+.form-input {
+    border: 1px solid black;
+}
+
+.form-input.error {
+    border: 1px solid red;
+}
+
+.menu li a {
+    text-transform: uppercase;
+}
+
+.menu2 > li a {
+    text-transform: uppercase;
+}
+
+h3 +  .description {
+    color: green;
+}
+
+/** Вот так тоже попробуйте, почему не сработало?*/
+/* h3 +  p {
+    color: green;
+} */
+
+h2 ~ .description {
+    color: orange;
+}
+
+/** рекомендуется размещать каждый селектор на строчке*/
+/* h2,
+h3 {
+    text-transform: lowercase;
+} */
+
+a[data-customer] {
+    font-weight: bolder;
+}
+
+/* Равен */
+/* a[data-customer="antilopa"] {
+    color: orange;
+} */
+
+/* Содержит слово */
+/* a[data-customer~="ostap"] {
+    color: orange;
+} */
+
+/* Содержит сочетание */
+/* a[data-customer*="ko"] {
+    color: orange;
+} */
+
+/*Начинается*/
+/* a[data-customer^="ostap"] {
+    color: orange;
+}  */
+
+/* Заканчивается */
+/* a[data-customer$="ostap"] {
+    color: orange;
+} */
+
+input[type="text"] {
+    width: 150px;
+    display: block;
+    margin-bottom: 10px;
+    background-color: yellow;
+  }
+input[type="button"] {
+    background-color: cyan;
+}
+  .button[type="textarea"] {
+    border: 1px solid blue;
+  }
+
+  .button[data-foo="bazz"] {
+    border: 1px solid green;
+  }
