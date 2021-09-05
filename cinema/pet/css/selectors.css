@@ -1,0 +1,27 @@
+body{
+    font-size: 9px;
+    border: 1px solid red;
+    }
+.parent{
+border-bottom: 10px solid green;
+}
+#pagewrapper{
+    color: lawngreen unset;
+    font-size: 30px;
+
+}
+.content{
+    color: red !important;
+    font-size: 15px;
+}
+#pagewrapper  .content{
+    color: slateblue;
+}
+#pagewrapper > .content{
+    color:yellow;
+}
+
+
+.text{
+    border-bottom: inherit;
+}
