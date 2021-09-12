@@ -1,25 +1,26 @@
 .block01{
     background: url(../images/cinema_hall1.jpg);            
-    /* min-height: 100vh; */
+    min-height: 70vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
     margin: auto;
   
-    clip-path: polygon(0% 0%, 100% 0%, 100% 78%, 0% 96%); 
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 98%); 
     overflow: hidden;
  
    } 
    .block01__mail{
        text-decoration: underline;
    }
-   .block02__text1{
+   .block01__text1{
     color: #333;
     font-size: 33px;
     font-weight: 600;
     line-height: 43px;
+    margin-bottom: 23px;
    }
-   .block02__text2{
+   .block01__text2 {
 
    }

@@ -30,7 +30,8 @@ a{
     
     }   
     .block01__Line2{
-      margin-right: 73px;
+      margin-right: 70px;
+      padding: 0 1px;
     }   
 .rubric{
       font-size: 20px;
@@ -50,7 +51,8 @@ a{
       font-size: 12px;
       font-weight:500;   
       transition: 0.2s;
-      cursor: pointer;    
+      cursor: pointer;  
+      
             
     }
     .link-white:hover{
