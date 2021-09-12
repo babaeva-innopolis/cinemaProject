@@ -66,10 +66,10 @@
    background: #A3CC40;
  }
  .block01__call:hover svg{
-   fill: @fff;
+   fill: #fff;
  }
  .block01__call:hover span{
-   color: @fff;
+   color: #fff;
  }
  
  
@@ -115,9 +115,7 @@
  
  
  .block01__main {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+  text-align: center;
    max-width: 100%;
    padding: 10rem 0 12.5rem;
    margin-right: 1px;
@@ -135,7 +133,7 @@
     font-size: 41px;
     font-weight: 400;
     line-height: 1.1;
-    margin-top: 10px;
+    margin-top: 28px;
   }
 /* вторая страница-почему мы */
 
@@ -149,7 +147,7 @@
   }
   .block01__info{
     background: #FFFFFF;
-    padding: 28px 8px 0 48px;
+    padding: 28px 49px 0 46px;
     border-radius: 10px;   
     /* max-width: 50%; */
     /* right: 0px;
@@ -168,14 +166,14 @@
   .block02__col2{
     display: flex;
     width: 940px;
-    padding: 0 15 px;
+    padding: 0 15px;
     box-sizing: border-box;
   }
   .block02__visit-card{
     box-sizing: border-box;
     padding: 0 15px;
     width: 33.33%;
-    f      
+    
   }
 /* третья страница - таблица */
 .Block03{
@@ -187,7 +185,7 @@
   font-weight: 400;
   font-size: 11px;
   margin: 27px auto 0;
- margin-top: ;
+
   line-height: 15.4px; 
   display: block;
 
@@ -359,11 +357,7 @@ opacity: 0;
 .review{
   overflow: auto;
 }
-.block08__form{
-   display: flex;
-   height: 527px;
-   width: 344px;
-}
+
 /* нижний колонтитул */
 
 footer{

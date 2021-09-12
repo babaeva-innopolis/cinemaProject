@@ -7,7 +7,9 @@
   .container_wide{
     max-width: 1124px;
   }
-  .block02__row,
+.block02__row{
+  margin: 0 -15px;
+}
   .Block03__row,
   .block04__row,
   .block05__row,
@@ -31,6 +33,4 @@
   overflow: hidden; 
    margin-bottom: 15px;
  }
- .block08__form{
-   
- }
+ 
