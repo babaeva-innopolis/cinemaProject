@@ -72,3 +72,72 @@ a{
       .relative{
         position: relative;
       } 
+      form {
+        width: 400px;
+        }
+        input, textarea, select {
+        font-size: 19px;
+        color: #6c6c6c;
+        padding: 15px 11px;
+        border: 1px solid #bebebe;
+        border-radius: 5px;
+        width: 100%;
+        outline: 0;
+        transition: .2s;
+        }
+        select {
+        -webkit-appearance: none; -moz-appearance: none;
+        appearance: none;
+        background: url(../img/down-arrow.svg) 96% center / 5% no-repeat
+        #fff;
+        }
+        input[type="radio"], input[type="checkbox"] {
+        display: none;
+        }
+        input[type="radio"] + label, input[type="checkbox"] + label {
+        font-size: 16px;
+        padding-left: 23px;
+        position: relative;
+        }
+        input[type="radio"] + label::before, input[type="checkbox"] + label::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 1px;
+        width: 14px;
+        height: 14px;
+        border: 1px solid #000;
+        }
+        input[type="radio"] + label::before {
+        border-radius: 100%;
+        }
+        input[type="textarea"] {
+        height: 250px;
+        resize: none;
+        }
+        input[type="file"] {
+        position: absolute;
+        opacity: 0;
+        width: 1px;
+        height: 1px;
+        z-index: 1;
+        box-shadow: none;
+        border: 0;
+        }
+        input[type="file"] + label {
+        font-size: 18px;
+        color: #90d23d;
+        position: relative;
+        border: 1px solid #90d23d;
+        padding: 15px;
+        z-index: 2;
+        background: #fff;
+        width: 100%;
+        display: block;
+        cursor: pointer;
+        border-radius: 5px;
+        }
+        input[type="button"], button {
+        border-right: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+        } 

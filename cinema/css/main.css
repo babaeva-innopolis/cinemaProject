@@ -243,23 +243,7 @@ table {
   padding: 0 45px 0 25px;           
 } 
 /* четверная страница-подарок каждому */
-.block04{
-  background-image: url(../images/kinohlopushka1.jpg);
-  min-height: 50vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  clip-path: polygon(0% 17%, 100% 0%, 100% 80%, 2% 95%); 
-  /* background: rgba(22, 22, 22, 0.8); */
-}
-.block04__present{
-   /* position: absolute; */
-    max-width: 33.33%;
-    left: 0;
-    top: 0;
-    transform: translateY(-50%);
-    z-index: 1;   
-}
+
 .block04__header{
   color: #fff;
   font-size: 48px;
@@ -374,6 +358,11 @@ opacity: 0;
 /* форма */
 .review{
   overflow: auto;
+}
+.block08__form{
+   display: flex;
+   height: 527px;
+   width: 344px;
 }
 /* нижний колонтитул */
 

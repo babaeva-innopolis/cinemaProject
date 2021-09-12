@@ -24,3 +24,36 @@
    .block01__text2 {
 
    }
+  .block08__feedback {
+      display: flex;
+      flex-direction: column;
+      background: url(../images/audience.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+    background-size: cover;
+      position: relative;
+      background: linear-gradient(270deg, #FFFFFF 12.2%, rgba (30, 30, 30, 0) 107.85%);
+    height: 40vh;
+    width: 767;
+    margin: 0 0 0 38px;
+    border-radius: 20px;
+    box-shadow: 8px 9px 39px rgba (185, 185, 185, 0.37);
+
+  }
+  .block04{
+    background-image: url(../images/present.jpg);
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(0% 17%, 100% 0%, 100% 80%, 2% 95%); 
+    /* background: rgba(22, 22, 22, 0.8); */
+  }
+  .block04__present{
+     /* position: absolute; */
+      max-width: 33.33%;
+      left: 0;
+      top: 0;
+      transform: translateY(-50%);
+      z-index: 1;   
+  }

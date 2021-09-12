@@ -363,14 +363,14 @@
             <div class="block08__row">
                 <div class="block08__feedback">
                   <form action="order.php"> 
-                        <div>
+                        <div class="block08__form">
                             <h2 id="block5">Обратная связь</h2>
                        </div>
-                       <div>
+                       <div class="block08__form">
                        <label for="name">Полное имя</label>
                            <input type="text" name="name" id="name" placeholder="Полное имя" required>
                        </div>
-                       <div>
+                       <div class="block08__form">
                            <label for="place">Выбери место</label>
                           <select name="place" id="place" placeholder="Номер места" required>
                               <optgroup label="Name1">
@@ -387,22 +387,18 @@
                                </optgroup>
                            </select>
                        </div>
-                       <div>
+                       <div class="block08__form">
                            <label for="review">Отзыв</label>
                            <textarea name="review" id="review" placeholder="Напишите свой отзыв"></textarea>
                        </div>
-                       <div>
-                           <label for="mail">Электронная почта</label>
-                           <input type="email" name="mail" id="mail" placeholder="Напишите свой @" required>                
-                       </div>
-                       <div>
+                       <div class="block08__form">
                            <input type="checkbox" id="checkbox">
                            <label for="checkbox">Я согласен на обработку своих персональных данных</label>
                        </div>
-                       <div>
-                           <label><input type="file">Загрузить файл</label>                
+                       <div class="block08__form">
+                        <p class="block08__button button_big"><input type="submit" value="Заказать"></p>               
                        </div> 
-                       <p class="block08__button button_big"><input type="submit" value="Заказать"></p>
+                      
                    </form>
                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
                        labore et dolore magna aliqua. Ut enim ad minim veniam</p>
