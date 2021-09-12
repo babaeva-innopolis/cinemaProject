@@ -1,4 +1,4 @@
-dh3<!--index.html-структура документа-->
+<!--index.html-структура документа-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,14 +7,19 @@ dh3<!--index.html-структура документа-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Продажа билетов в кино в Иннополисе</title>
      <link rel="stylesheet" href="./css/main.css">
-     <link rel="stylesheet" href="./css/media.css">
+     <link rel="stylesheet" href="./css/fonts.css">
      <link rel="stylesheet" href="./css/reset.css">
      <link rel="stylesheet" href="./css/layout.css">
-     <link rel="stylesheet" href="">
+     <link rel="stylesheet" href="./css/grid.css">
+     <link rel="stylesheet" href="./css/components.css">
+     <link rel="stylesheet" href="./css/media.css">
      
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+     
+     
+     
+     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;400;500;600&display=swap" rel="stylesheet">>    
+     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;400;500;600&display=swap" rel="stylesheet">>     -->
 </head>
 <body>
     <div class="block01">
@@ -53,14 +58,12 @@ dh3<!--index.html-структура документа-->
                                 </div>
                             </div>
                         </div>
-                        <nav class="block01__nav" id="mainmenu">
-                            <ul class="blok01__ul" aria-labelledby="mainmenu">                                
-                                <li><a class="link-white link-white_big" href="#block1"><b>EVENT DETALIS</b> </a></li>                                
-                                <li><a class="link-white link-white_big" href="#block2"><b>SPEAKERS</b> </a></li>
-                                <li><a class="link-white link-white_big" href="#block3"><b>SPONSORS</b> </a></li>
-                                <li><a class="link-white link-white_big" href="#block4"><b>PAST EVENTS</b> </a></li>
-                                <li><a class="link-white link-white_big" href="#block5"><b>CONTACT</b> </a></li>
-                            </ul>
+                        <nav class="block01__nav" id="mainmenu">                                                           
+                                <div class="block01__Line2"><a class="link-white link-white_big" href="#block1"><b>EVENT DETALIS</b> </a></div>                                
+                                <div class="block01__Line2"><a class="link-white link-white_big" href="#block2"><b>SPEAKERS</b> </a></div>
+                                <div class="block01__Line2"><a class="link-white link-white_big" href="#block3"><b>SPONSORS</b> </a></div>
+                                <div class="block01__Line2"><a class="link-white link-white_big" href="#block4"><b>PAST EVENTS</b> </a></div>
+                                <div class="block01__Line2"><a class="link-white link-white_big" href="#block5"><b>CONTACT</b> </a></div>
                         </nav>
                     </div>                    
                 </div>
@@ -68,47 +71,48 @@ dh3<!--index.html-структура документа-->
                     <h1 class="block01__h1">Закажите билет в кино</h1>
                     <h2 class="block01__h2"> Всем покупателям подарок!</h2>
                 </div>
+                <div class="block02__inner relative">
+                    <div class="block02__info">
+                        <p class="block02__text1" >Добро пожаловать!</p>
+                        <p class="block02__text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p><br>
+                        <p class="block02__text2"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt.</p>
+                    </div>
+                </div>
             </header>            
          </div>
     </div>
     <div class="block02">
-        <div class="container relative">
-            <div class="block02__row">
-                <div class="block02__inner">
-                    <div class="block02__info">
-                        <p class="block02__text1">Добро пожаловать!</p>
-                        <p class="block02__text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p><br>
-                        <p class="block02__text1"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt.</p>
-                    </div>
-                </div>
+        <div class="container ">
+            <div class="block02__row ">
+                
                 <p class="header block02__header">Почему мы?</p>
                 <div>
                     <div class="block02__col1">
-                        <div class="block02__visit-card"><img src="./images/3yoqeQbkSg8 1.png" alt="Большой экран"/><b>Большие экраны</b>
+                        <div class="block02__visit-card"><img src="./images/3yoqeQbkSg8 1.png" alt="Большой экран"/><p class="block02__name rubric">Большие экраны</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                                 ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                             </div>
-                        <div class="block02__visit-card"><img src="./images/obemniy_zvuk-1200x900 1.png" alt="Динамики"/><b>Объёмный звук</b>
+                        <div class="block02__visit-card"><img src="./images/obemniy_zvuk-1200x900 1.png" alt="Динамики"/><p class="block02__name rubric">Объёмный звук</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                                 ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                             </div>
-                        <div class="block02__visit-card"><img src=".//images/unnamed 1.png" alt="Зрительский зал"/><b>Удобные кресла</b>
+                        <div class="block02__visit-card"><img src=".//images/unnamed 1.png" alt="Зрительский зал"/><p class="block02__name rubric">Удобные кресла</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                                 ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                             </div>
                     </div>
                     <div class="block02__col2">
-                        <div class="block02__visit-card"><img src="./images/VXhJVtytwj8 1.png" alt=""/><b>Уютная атмосфера</b>
+                        <div class="block02__visit-card"><img src="./images/VXhJVtytwj8 1.png" alt=""/><p class="block02__name rubric">Уютная атмосфера</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                                 ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                             </div>
-                        <div class="block02__visit-card"><img src="./images/72_osn1 1.png" alt="3Д"/><b>Полное погружение</b>
+                        <div class="block02__visit-card"><img src="./images/72_osn1 1.png" alt="3Д"/><p class="block02__name rubric">Полное погружение</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                             ut labore et dolore magna aliqua. Ut enim ad minim veniam.  </p>
                         </div>
-                        <div class="block02__visit-card"><img src="./images/maxresdefault 1.png" alt="Места для влюбленных"/><b>Поцелуи на заднем ряду</b>
+                        <div class="block02__visit-card"><img src="./images/maxresdefault 1.png" alt="Места для влюбленных"/><p class="block02__name rubric">Поцелуи на заднем ряду</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                             ut labore et dolore magna aliqua. Ut enim ad minim veniam.  </p>
                         </div>
@@ -178,7 +182,7 @@ dh3<!--index.html-структура документа-->
                      quam vulputate. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Facilisi 
                      cras fermentum odio eu feugiat pretium nibh. Eu nisl nunc mi ipsum. Nibh sit amet commodo 
                      nulla facilisi nullam vehicula ipsum.</p>
-                    <button class="block04__present-button" >Получить подарок</button>
+                    <button class="block04__button button" >Получить подарок</button>
                 </div>
                
             </div>
@@ -312,9 +316,9 @@ dh3<!--index.html-структура документа-->
              quam elementum pulvinar etiam non quam.</p>
                 </div>
                 <div class="block06__col1">
-                    <div class="block06__product"><img src="./images/cola.jpg" alt="кола"><p>Coca-cola</p></div>
-                    <div class="block06__product"><img src="./images/trinket.jpg" alt="брелок"><p>Брелок “Железный человек”</p></div>
-                    <div class="block06__product"><img src="./images/poster.jpg" alt="постер"><p>Постер “Мстители”</p> </div>
+                    <div class="block06__product"><img src="./images/cola.jpg" alt="кола"><p class="blok06__name rubric">Coca-cola</p></div>
+                    <div class="block06__product"><img src="./images/trinket.jpg" alt="брелок"><p class="blok06__name rubric">Брелок “Железный человек”</p></div>
+                    <div class="block06__product"><img src="./images/poster.jpg" alt="постер"><p class="blok06__name rubric">Постер “Мстители”</p> </div>
                 </div>
             </div>
             
@@ -398,7 +402,7 @@ dh3<!--index.html-структура документа-->
                        <div>
                            <label><input type="file">Загрузить файл</label>                
                        </div> 
-                       <p><input type="submit" value="Заказать"></p>
+                       <p class="block08__button button_big"><input type="submit" value="Заказать"></p>
                    </form>
                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
                        labore et dolore magna aliqua. Ut enim ad minim veniam</p>
@@ -410,7 +414,6 @@ dh3<!--index.html-структура документа-->
             </div>
 
         </div>
-       
     </section> 
     
     <footer class="block09">

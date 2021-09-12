@@ -1,0 +1,72 @@
+/** Общие стили */
+html {
+    box-sizing: border-box;
+    }
+    *, *:before, *:after {
+    box-sizing: inherit;
+    }
+body {
+    font-family: "IBM-Plex-Sans";
+    margin: 0;
+    max-width: 1124px;
+    font-style: normal;
+    font-weight: normal;
+    }
+p{
+        margin: 0;
+        font-size: 11px;
+        line-height: 14px;
+        font-weight: 400;
+    }
+ul{
+      padding: 0;
+  
+    }
+a{
+    text-decoration: none;
+    }
+.link-white_big{
+    text-transform: uppercase;
+    
+    }   
+    .block01__Line2{
+      margin-right: 73px;
+    }   
+.rubric{
+      font-size: 20px;
+      line-height: 26px;
+    }
+.header{
+      color: #A3CC40;
+      font-size: 48px;
+      font-weight: 500;
+      line-height: 1.1;
+      margin-bottom: 87px;
+    
+    }
+.link-white {
+      /* display: inline-block; */
+      color: #FFFFFF;
+      font-size: 12px;
+      font-weight:500;   
+      transition: 0.2s;
+      cursor: pointer;    
+            
+    }
+    .link-white:hover{
+        color: #A3CC40;
+      }
+    .button{
+        display: inline-block;
+         background: #FFFFFF;
+         padding: 1px 9 px 5px;
+         border-radius: 6px;   
+         border: 2px solid #fff;
+         transition: 0.2s; 
+      }
+      .button_big{
+        padding: 1px 9 px 5px;
+      }
+      .relative{
+        position: relative;
+      } 
