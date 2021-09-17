@@ -6,6 +6,8 @@
   }
   .container_wide{
     max-width: 1124px;
+    position: relative;
+    z-index: 2;
   }
 .block02__row{
   margin: 0 -15px;

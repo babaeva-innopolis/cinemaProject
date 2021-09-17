@@ -1,16 +1,26 @@
 .block01{
-    background: url(../images/cinema_hall1.jpg);            
+    background:  url(../images/cinema_hall1.jpg);            
     min-height: 70vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
     margin: auto;
-  
     clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 98%); 
     overflow: hidden;
  
    } 
+   .block01:after{
+     content: '';
+    background: rgba(22, 22, 22, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: 1.5;
+   }
    .block01__mail{
        text-decoration: underline;
    }
@@ -25,6 +35,35 @@
      margin-top: -4px;
 
    }
+   .block04{
+    background: url(../images/kinohlopushka1_0_5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    min-height: 70vh;
+    clip-path: polygon(0% 31%, 180% 0%, 100% 86%, 0% 100%); 
+      }
+  .block04:after{
+    content: '';
+   background: rgba(22, 22, 22, 0.8);
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   z-index: 1;
+   opacity: 1.5;
+  }
+  .block04__row{
+    position: relative;
+    z-index: 2;
+    color: #FFFFFF;
+    
+  }
+ 
+  
    .block08__row{
      display: flex;
      flex-direction: row;
@@ -39,36 +78,32 @@
      margin: 0 0 0 38px;
      border-radius: 20px;
    }
+   .block08__row:after{
+    content: '';
+   background: linear-gradient(270deg, #FFFFFF 12.2%, rgba (30, 30, 30, 0) 107.85%);
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   z-index: 1;
+   opacity: 1.5;
+  }
    .block08__right {
     flex-basis: 44%;
      background-color: #FFFFFF;
      position: absolute;
     
    }
-   .block08__left{
+   /* .block08__left{
     flex-basis: 56%;
     background: linear-gradient(270deg, #FFFFFF 12.2%, rgba (30, 30, 30, 0) 107.85%);
     position: absolute;
-   }
+   } */
   .block08__feedback {
       /* display: flex; */
      
     
   }
-  .block04{
-    background-image: url(../images/present.jpg);
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    clip-path: polygon(0% 17%, 100% 0%, 100% 80%, 2% 95%); 
-    /* background: rgba(22, 22, 22, 0.8); */
-  }
-  .block04__present{
-     /* position: absolute; */
-      max-width: 33.33%;
-      left: 0;
-      top: 0;
-      transform: translateY(-50%);
-      z-index: 1;   
-  }
+ 
+  
