@@ -493,12 +493,42 @@ opacity: 0;
 .review{
   overflow: auto;
 }
+
 .container_form{
   max-width: 767px;
 }
 .block08__form{
   max-width: 300px;
   margin: 30px;
+
+}
+.block08{
+  padding: 0 15px;
+}
+.block08__row{
+display: flex;
+border-radius: 5px;
+box-shadow: 8px 9px 39px rgba (185, 185, 185, 0.37);
+
+}
+.block08__left{
+  flex: 0 0 58%;
+  position: relative;
+  background: url(../images/audience.jpg);
+
+}
+.block08__right{
+  flex: 0 0 42%;
+  
+
+}
+.block08__shadow{
+position: absolute;
+background: linear-gradient(270deg, #FFFFFF 12.2%, rgba (30, 30, 30, 0) 107.85%);
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
 
 }
 .block08__label{

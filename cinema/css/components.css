@@ -99,13 +99,14 @@
  }
  .blook07{
   background-image: url(../images/kinohlopushka.jpg);
-  min-height: 25vh;
+  min-height: 89vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   clip-path: polygon(0% 14%, 156% 0%, 100% 89%, 0% 96%); 
+  position: relative;
 }
-.block07:after{
+.blook07:after{
   content: '';
  background: rgba(22, 22, 22, 0.8);
  position: absolute;
@@ -115,6 +116,9 @@
  bottom: 0;
  z-index: 1;
  opacity: 1.5;
+}
+block07__foto1{
+  margin-top: 50px;
 }
   
    .block08__gradient{
@@ -146,8 +150,8 @@ line-height: 0;
      position: absolute;
     
    } */
-   /* .block08__left{
-    flex-basis: 56%;
+   /* .block08__left{ */
+    /* flex-basis: 56%;
     background: linear-gradient(270deg, #FFFFFF 12.2%, rgba (30, 30, 30, 0) 107.85%);
     position: absolute;
    } */
