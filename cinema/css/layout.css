@@ -29,20 +29,21 @@ a{
     text-transform: uppercase;
     
     }   
-    .block01__Line2{
+.block01__Line2{
       margin-right: 70px;
       padding: 0 1px;
     }   
 .rubric{
       font-size: 20px;
       line-height: 26px;
+      font-weight: 600;
     }
 .header{
       color: #A3CC40;
       font-size: 48px;
       font-weight: 500;
       line-height: 1.1;
-      margin-bottom: 87px;
+      margin-bottom: 89px;
     
     }
 .link-white {
