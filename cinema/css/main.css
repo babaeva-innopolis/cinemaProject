@@ -186,6 +186,12 @@
     margin-top: 36px;
     margin-bottom: 23px;
   }
+  .block02__img{
+    transition: 1s;
+  }
+  .block02__img:hover{
+    transform: scale(1.2);
+  }
 /* третья страница - таблица */
 .Block03{
   margin-bottom: 15px;
@@ -757,6 +763,24 @@ footer > .container_footer{
   height: 31px;
   border-radius: 50%;
   background-color: #BEE956;
+  position: relative;
+  width: 31px;
+  height: 31px;
+  text-align: center;
+  cursor: pointer;
+  transition: .1s linear;
+  display: inline-block;
+}
+.label:hover{
+  background: #fff;
+  border-color: #BEE956;
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #A3CC40;;
+}
+.label:hover  svg{
+fill: #BEE956;
+color: #BEE956;
+stroke: #BEE956;
+box-shadow:  15px 27px 39px rgba(48, 63, 11, 0.18);
 }
 .label  svg{
   position: absolute;
@@ -765,16 +789,9 @@ footer > .container_footer{
   transform: translate(-50%,-50%);
   display: inline-block;
   }
-.label  img{
-  position: absolute;
-    display: block;
-    margin: 9px 0 0 9px;
-}
-.block09__facebook{
-  position: relative;
-  width: 31px;
-  height: 31px;
-  text-align: center;
+.block09__instagram svg{
+  width: 14px;
+  height: 14px;
 }
 .block09__facebook svg{
   width: 6px;
@@ -782,32 +799,22 @@ footer > .container_footer{
   
 }
 .block09__linkedin{
-  position: relative;
-  width: 31px;
-  height: 31px;
-  text-align: center;
+  margin-left: 2px;
+  padding-bottom: 3px;
 }
 .block09__linkedin svg{
   width: 16px;
   height: 14px;
 }
 .block09__frame{
-  position: relative;
-  width: 31px;
-  height: 31px;
-  text-align: center;
-  margin-left: 10px;
+   margin-left: 10px;
 }
 .block09__frame svg{
   width: 18px;
   height: 12px;
 }
 .block09__twitterr{
-  position: relative;
-  width: 31px;
-  height: 31px;
-  text-align: center;
-  margin-left: 8px;
+    margin-left: 8px;
 }
 .block09__twitterr svg{
   width: 15px;
