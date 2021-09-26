@@ -67,14 +67,12 @@ a{
          border: 2px solid #fff;
          transition: 0.2s; 
       }
-      .button_big{
-        padding: 1px 9 px 5px;
-      }
-      .relative{
+            .relative{
         position: relative;
       } 
       form {
-        width: 400px;
+        width: 344px;
+        margin: 0 10px;
         }
         input, textarea, select {
         font-size: 19px;
@@ -103,11 +101,12 @@ a{
         input[type="radio"] + label::before, input[type="checkbox"] + label::before {
         content: '';
         position: absolute;
-        left: 0;
-        top: 1px;
-        width: 14px;
-        height: 14px;
-        border: 1px solid #000;
+        left: 1px;
+        top: 17px;
+        width: 18px;
+        height: 17px;
+        border: 1px solid #A3CC40;
+        border-radius: 5px;
         }
         input[type="radio"] + label::before {
         border-radius: 100%;

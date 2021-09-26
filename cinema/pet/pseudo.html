@@ -7,11 +7,66 @@
     <title>Document</title>
 </head>
 <style>
-    body{
-        font-size: 9px;
-    }
+   .block08__form{
+  width: 344px;
+  margin: 10px;
+}
+.block08__label{
+  position: relative;
+  background: #DEDEDE;
+  border-radius: 5px;
+  display: block;
+  transition: 0.2s;
+}
+.block08__input{
+  display: block;
+  width: 100%;
+  background: transparent;
+  box-shadow: none;
+  border: 0;
+  padding: 20px 15px;
+}
+.block08__name{
+  position: absolute;
+  font-size: 15px;
+  line-height: 19px;
+  color: #A1A1A1;
+  top: 20px;
+  left: 15px;
+  transition: 0.2s;
+}
+.block08__label_filled .block08__name{
+  top: -12px;
+  background: #FFFFFF;
+  padding: 0 5px;
+  left: 10px;
+}
+
+/* .block08__label, */
+.block08__label_filled{
+  background: #FFFFFF;
+  box-shadow: 0 0 0 5px rgba(170, 243, 77, 0.52);
+ 
+}
+/* нижний колонтитул */
 </style>
 <body>
+
+    <div class="block08__form">
+        <label class="block08__label" for="name">
+            <p class="block08__name">Полное имя</p> </label>
+            <input class="block08__input" type="text" name="name" id="name" placeholder="" required>
+        </div>
+        <div class="block08__form">
+         <label class="block08__label block08__label_filled" for="name">
+             <p class="block08__name">Полное имя</p> </label>
+             <input class="block08__input" type="text" name="name" id="name" placeholder="" required>
+         </div>
+
+
+
+
+
     <h2>heading</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis beatae perspiciatis nesciunt ab enim architecto odio sapiente odit quod, incidunt veniam at fugit laudantium magnam numquam ex officia necessitatibus est?</p>
 </body>
