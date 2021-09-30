@@ -1,8 +1,8 @@
 /** Общие стили */
 html {
     box-sizing: border-box;
-    font-size: 20px;
-    /* font-size: 1.78vw; */
+    /* font-size: 20px; */
+    font-size: 1.78vw;
     }
     *, *:before, *:after {
     box-sizing: inherit;

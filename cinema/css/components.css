@@ -42,7 +42,7 @@
     background-size: cover;
     position: relative;
     margin: auto;
-    min-height: 63vh;
+    min-height: 71vh;
     clip-path: polygon(0% 31%, 180% 0%, 100% 86%, 0% 100%); 
     margin-bottom: 3rem;
     overflow: hidden;
@@ -115,7 +115,7 @@
  }
  .blook07{
   background-image: url(../images/kinohlopushka.jpg);
-  min-height: 80vh;
+  min-height: 89vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
