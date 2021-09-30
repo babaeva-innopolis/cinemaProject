@@ -1,16 +1,16 @@
 .container{
-    padding: 0 15px;
+    padding: 0 0.75rem;
     max-width: 850px;
     margin: 0 auto;
     /* height: 689px; */
   }
   .container_wide{
-    max-width: 1124px;
+    max-width: 56.2rem;
     position: relative;
     z-index: 2;
   }
 .block02__row{
-  margin: 0 -15px;
+  margin: 0 -0.75rem;
 }
   .Block03__row,
   .block04__row,
@@ -19,7 +19,7 @@
   .blook07__row,
   .block08__row,
   .block09__row {
-    margin: 0 -15px;
+    margin: 0 -0.75rem;
     overflow: hidden; 
   }  
 
@@ -28,11 +28,11 @@
  .block01__mail,
  .block01__address, 
  .block01__call {
-   margin-right: 53px;
+   margin-right: 2.65rem;
    
  }
  .block02{
   overflow: hidden; 
-   margin-bottom: 121px;
+   margin-bottom: 5.85rem;
  }
  

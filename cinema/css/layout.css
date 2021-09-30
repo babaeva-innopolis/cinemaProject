@@ -1,6 +1,8 @@
 /** Общие стили */
 html {
     box-sizing: border-box;
+    font-size: 20px;
+    /* font-size: 1.78vw; */
     }
     *, *:before, *:after {
     box-sizing: inherit;
@@ -8,14 +10,14 @@ html {
 body {
     font-family: "IBM-Plex-Sans";
     margin: 0;
-    max-width: 1124px;
+    max-width: 56.2rem;
     font-style: normal;
     font-weight: normal;
     }
 p{
         margin: 0;
-        font-size: 11px;
-        line-height: 14px;
+        font-size: 0.55rem;
+        line-height: 1.3;
         font-weight: 400;
     }
 ul{
@@ -30,56 +32,55 @@ a{
     
     }   
 .block01__Line2{
-      margin-right: 70px;
+      margin-right: 3.5rem;
       padding: 0 1px;
     }   
 .rubric{
-      font-size: 20px;
-      line-height: 26px;
+      font-size: 1rem;
+      line-height: 1.3;
       font-weight: 600;
     }
 .header{
       color: #A3CC40;
-      font-size: 48px;
+      font-size: 2.4rem;
       font-weight: 500;
       line-height: 1.1;
-      margin-bottom: 89px;
+      margin-bottom: 4.40rem;
     
     }
 .link-white {
-      /* display: inline-block; */
-      color: #FFFFFF;
-      font-size: 12px;
-      font-weight:500;   
-      transition: 0.2s;
-      cursor: pointer;  
+    color: #FFFFFF;
+    font-size: 0.6rem;
+    font-weight:500;   
+    transition: 0.2s;
+    cursor: pointer;  
       
             
     }
-    .link-white:hover{
-        color: #A3CC40;
+.link-white:hover{
+   color: #A3CC40;
       }
-    .button{
-        display: inline-block;
-         background: #FFFFFF;
-         padding: 1px 9 px 5px;
-         border-radius: 6px;   
-         border: 2px solid #fff;
-         transition: 0.2s; 
+.button{
+  display: inline-block;
+  background: #FFFFFF;
+  padding: 1px 0.45rem 0.25rem;
+  border-radius: 0.3rem;   
+  border: 2px solid #fff;
+  transition: 0.2s; 
       }
-            .relative{
+.relative{
         position: relative;
       } 
       form {
-        width: 344px;
-        margin: 0 10px;
+        width: 17.2rem;
+        margin: 0 0.5rem;
         }
         input, textarea, select {
-        font-size: 19px;
+        font-size: 0.95rem;
         color: #6c6c6c;
-        padding: 15px 11px;
+        padding: 0.75rem 0.55rem;
         border: 1px solid #bebebe;
-        border-radius: 5px;
+        border-radius: 0.25rem;
         width: 100%;
         outline: 0;
         transition: .2s;
@@ -94,25 +95,25 @@ a{
         display: none;
         }
         input[type="radio"] + label, input[type="checkbox"] + label {
-        font-size: 16px;
-        padding-left: 23px;
+        font-size: 0.8rem;
+        padding-left: 1.15rem;
         position: relative;
         }
         input[type="radio"] + label::before, input[type="checkbox"] + label::before {
         content: '';
         position: absolute;
         left: 1px;
-        top: 17px;
-        width: 18px;
-        height: 17px;
+        top: 0.85rem;
+        width: 0.9rem;
+        height: 0.85rem;
         border: 1px solid #A3CC40;
-        border-radius: 5px;
+        border-radius: 0.25rem;
         }
         input[type="radio"] + label::before {
         border-radius: 100%;
         }
         input[type="textarea"] {
-        height: 250px;
+        height: 12.5rem;
         resize: none;
         }
         input[type="file"] {
@@ -125,17 +126,17 @@ a{
         border: 0;
         }
         input[type="file"] + label {
-        font-size: 18px;
+        font-size: 0.9rem;
         color: #90d23d;
         position: relative;
         border: 1px solid #90d23d;
-        padding: 15px;
+        padding: 0.75rem;
         z-index: 2;
         background: #fff;
         width: 100%;
         display: block;
         cursor: pointer;
-        border-radius: 5px;
+        border-radius: 0.25rem;
         }
         input[type="button"], button {
         border-right: 1px solid transparent;
