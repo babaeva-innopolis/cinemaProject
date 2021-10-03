@@ -236,7 +236,7 @@ tr.movie-table__row-thead:first-child > th:first-child{
 tr.movie-table__row-thead th{
   background: #A3CC40;
   color: #FFFFFF;
-  height: 2.25rem;
+  height: 3.5rem;
   box-sizing: border-box;
   font-weight: 600;
   font-size: 1rem;
@@ -269,7 +269,7 @@ tr.table-tfoot{
   background: #6c6c6c;
 }
 td {
-  height: 2.25rem;
+  height: 3.5rem;
   text-align: left;
   box-sizing: border-box;
   font-weight: 400;
