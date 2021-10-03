@@ -331,9 +331,28 @@ th > a{
    margin-left: 6.95rem;
    max-width: 15.1rem;
    z-index: 1;
-
    
 }
+.block04__shadow{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(22, 22, 22, 0.8);
+}
+.block04__shadow:before{
+  content: "";
+    position: absolute;
+    display: block;
+    border-top: 6.5rem solid #ffffff;
+    border-right: 100vw solid transparent;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+}
+
 .block04__picture-1 img{
    display: block;
    border-radius: 50%; 
@@ -466,7 +485,7 @@ opacity: 0;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  margin-bottom: 2.05rem;
+  margin-bottom: 2.85rem;
 }
 .block06__product{
   box-sizing: border-box;
