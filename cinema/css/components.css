@@ -1,25 +1,31 @@
 .block01{
-    background:  url(../images/cinema_hall1.jpg);            
-    min-height: 63vh;
+    background:  url(../images/back1124.jpg);            
+    min-height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
     margin: auto;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 98%); 
     overflow: hidden;
  
    } 
    .block01:after{
      content: '';
-    background: rgba(22, 22, 22, 0.8);
+     display: block;
+    /* background: rgba(22, 22, 22, 0.8); */
     position: absolute;
-    top: 0;
+    border-bottom: 6.8rem solid #ffffff;
+  border-left: 75vw solid transparent;
+  bottom: 0;
+  right: 0;
+  height: 0;
+  width: 0;
+    /* top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
-    z-index: 1;
-    opacity: 1.5;
+    bottom: 0; */
+    /* z-index: 1; */
+    /* opacity: 1.5; */
    }
    .block01__mail{
        text-decoration: underline;
@@ -36,28 +42,38 @@
 
    }
    .block04{
-    background: url(../images/kinohlopushka1_0_5.jpg);
+    background: url(../images/1488723618_ksdjvhsvg\ .jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
     margin: auto;
-    min-height: 71vh;
-    clip-path: polygon(0% 31%, 180% 0%, 100% 86%, 0% 100%); 
-    margin-bottom: 3rem;
+    padding-bottom: 3.1rem;
+    margin-bottom: 3.3rem;
     overflow: hidden;
-      }
+    }
       
   .block04:after{
     content: '';
-    background: rgba(22, 22, 22, 0.8);
     position: absolute;
+    border-bottom: 6.5rem solid #ffffff;
+    border-left: 100vw solid transparent;
+    bottom: 0;
+    left: 0;
+   height: 0;
+   width: 0;
+    display: block;
+  }
+  .block04:before {
+    content: "";
+    position: absolute;
+    display: block;
+    border-top: 6.5rem solid #ffffff;
+    border-right: 100vw solid transparent;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    opacity: 1.5;
+    height: 0;
+    width: 0;
   }
   .block04__row{
     position: relative;
@@ -96,7 +112,7 @@
     width: 27.4rem;
   }
   .block05{
-    margin-bottom: 4.3rem;
+    margin-bottom: 4.2rem;
   }
   .container__film{
     max-width: 42.7rem;
@@ -115,34 +131,45 @@
  }
  .blook07{
   background-image: url(../images/kinohlopushka.jpg);
-  min-height: 89vh;
+  min-height: 83vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  clip-path: polygon(0% 15%, 164% 0%, 100% 90%, 0% 97%); 
+  /* clip-path: polygon(0% 15%, 164% 0%, 100% 90%, 0% 97%);  */
   position: relative;
-  margin-bottom: 1.05rem;
+  margin-bottom: 2.15rem;
 }
 .blook07:after{
   content: '';
- background: rgba(22, 22, 22, 0.8);
- position: absolute;
- top: 0;
- left: 0;
- right: 0;
- bottom: 0;
- z-index: 1;
- opacity: 1.5;
+  position: absolute;
+  border-bottom: 4rem solid #ffffff;
+  border-left: 100vw solid transparent;
+  bottom: 0;
+  left: 0;
+ height: 0;
+ width: 0;
+  display: block;
+}
+.blook07::before{
+  content: "";
+    position: absolute;
+    display: block;
+    border-top: 6.7rem solid #ffffff;
+    border-right: 100vw solid transparent;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
 }
 .container__reviews{
   position: relative;
   z-index: 3;
 }
 .block07__header{
-  padding: 8.9rem 0 0 1px;
+  padding: 7.2rem 0 0 1px;
 }
 #block4 {
-  margin-bottom: 1.65rem;
+  margin-bottom: 1.45rem;
 }
 .block07__text0{
   color: #FFFFFF;
@@ -179,7 +206,7 @@ width: 100%;
 }
 .block07__foto1 p{
   width: 9.3rem;
-  margin-top: 0.85rem;
+  margin-top: 1.15rem;
   margin-left: 0.4rem;
 }
 .block07__name{
@@ -204,7 +231,7 @@ width: 100%;
 }
  .block08__map {
    
-   margin: 3.35rem 0 0 -5.7rem;
+   margin: 3.25rem 0 0 -5.7rem;
     
   }
  

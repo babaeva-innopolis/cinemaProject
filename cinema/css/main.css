@@ -204,7 +204,7 @@
   
 /* третья страница - таблица */
 .Block03{
-  margin-bottom: 0.55rem;
+  margin-bottom: 4.35rem;
   overflow: hidden;
 }
  .block03__text{
@@ -327,7 +327,7 @@ th > a{
 .block04__picture-1{
   display: flex;
   position: absolute;
-  transform: translateY(19%);
+  transform: translateY(-9%);
    margin-left: 6.95rem;
    max-width: 15.1rem;
    z-index: 1;
@@ -345,11 +345,11 @@ th > a{
 .block04__text{
   display: flex;
   flex-direction: column;
-  padding: 4px 3.45rem 0 5.3rem;
+  padding: 4px 3.45rem 3.85rem 5.3rem;
   flex-basis: 64%;
   /* float: left; */
   box-sizing: border-box;
-  margin: 10.5rem 0 0 16.95rem;
+  margin: 6.6rem 0 0 16.95rem;
   text-align: right;
   align-items: flex-end;
 } 
@@ -453,19 +453,26 @@ opacity: 0;
 
 /* шестая страница-товары */
 
+.block06__col{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: 2px;
+  margin-bottom: 0.05rem;
+}
 .block06__col1{
-  display: inline;
-  width: 47rem;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 2.05rem;
 }
 .block06__product{
   box-sizing: border-box;
   padding-left: 2px;
   width: 12.25rem;
-  height: 16.55rem;
-  float: left; 
   position: relative;
-  overflow: hidden;
   border-radius: 0.5rem;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
@@ -594,7 +601,7 @@ right: 0;
 }
 .block08__form{
   width: 17.2rem;
-  margin: 0.35rem 0 0 2px;
+  margin: 0.25rem 0 0 2px;
 }
 .block08__label{
   position: relative;
@@ -611,7 +618,7 @@ right: 0;
   background: transparent;
   box-shadow: none;
   border: 0;
-  padding: 1rem 0.75rem;
+  padding: 0.3rem 0.35rem;
 }
 .block08__text{
   position: absolute;
