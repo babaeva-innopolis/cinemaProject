@@ -13,8 +13,14 @@
      <link rel="stylesheet" href="./css/grid.css">
      <link rel="stylesheet" href="./css/components.css">
      <link rel="stylesheet" href="./css/media.css">
-     
-     
+     <link rel="stylesheet" href="./css/popap.css">
+
+     <link rel="stylesheet" href="./css/owl.carousel.min.css">
+<link rel="stylesheet" href="./css/owl.theme.default.min.css">
+     <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script defer src="./js/owl.carousel.min.js"></script>
+     <script defer src="./js/skript.js"></script>
+    <script defer src="./js/popap.js"></script>
      
      
      <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -195,7 +201,7 @@
                         quam vulputate. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Facilisi 
                         cras fermentum odio eu feugiat pretium nibh. Eu nisl nunc mi ipsum. Nibh sit amet commodo 
                         nulla facilisi nullam vehicula ipsum.</p>
-                       <button class="block04__button button">Получить подарок</button>
+                       <button id="popupOpen" class="block04__button button">Получить подарок</button>
                     </div>
                 
             </div>
@@ -371,30 +377,32 @@
                ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel 
                 quam elementum pulvinar etiam non quam.</p>
                 </div>
-                <div class="block07__col">
-                    <article class="block07__foto1">
-                        <img src="./images/foto1.jpg" alt="">
-                        <p class="block07__name">Елена Еленова</p>
-                        <p class="block07__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                     <p class="block07__date">13.12.2020</p>
-                    </article>
-                    <article class="block07__foto1">
-                        <img src="./images/1foto2.jpg" alt="">
-                        <p class="block07__name">Борис Борисов</p>
-                        <p class="block07__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                    <p class="block07__date">13.12.2020</p>
-                </article> 
-                <article class="block07__foto1">
-                    <img src="./images/dicaprio.jpg" alt="">
-                    <p class="block07__name">Леонардо ДиКаприо</p>
-                    <p class="block07__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                     <p class="block07__date">13.12.2020</p>
-                </article> 
-                </div>
-                
+<div class="owl-carousel block07__col">
+    
+        <article class="block07__foto1">
+            <img src="./images/foto1.jpg" alt="">
+            <p class="block07__name">Елена Еленова</p>
+            <p class="block07__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         <p class="block07__date">13.12.2020</p>
+        </article>
+        <article class="block07__foto1">
+            <img src="./images/1foto2.jpg" alt="">
+            <p class="block07__name">Борис Борисов</p>
+            <p class="block07__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <p class="block07__date">13.12.2020</p>
+    </article> 
+    <article class="block07__foto1">
+        <img src="./images/dicaprio.jpg" alt="">
+        <p class="block07__name">Леонардо ДиКаприо</p>
+        <p class="block07__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+         <p class="block07__date">13.12.2020</p>
+    </article> 
+    
+</div>
+        
             </div>
             
         </div>
@@ -567,6 +575,26 @@
             <path d="M98.9906 24.5247C97.9994 24.5247 96.9814 24.4943 95.9901 24.5247C96.9814 24.5247 97.9726 24.5247 98.9906 24.5247C99.9551 24.5247 100.92 24.5247 101.884 24.5247C100.893 24.5552 99.9551 24.5247 98.9906 24.5247Z" fill="white"/>
             </symbol>
     </svg> 
+<div class="popup hidden">
+    <div class="popup__form">
+        <label class="popup__label" for="name">
+            <p class="popup__text popap__text-name">Полное имя</p> 
+            <input class="popup__input" type="text" name="name" id="name-popap" placeholder="" required>
+         </label>   
+         <label class="popup__label" for="name">
+             <p class="popup__text popup__text-name">mail</p> 
+             <input class="popup__input" type="text" name="name" id="mail-popup" placeholder="" required>
+         </label>
+    
+         <div class="popup__button button_big">
+             <input  type="submit" value="послать"></div>               
+       <div id="popupExit" class=popup__button-exit>
+        <svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.5363 1.82712L14.9176 0.208374L8.49997 6.62597L2.08237 0.208374L0.463623 1.82712L6.88122 8.24472L0.463623 14.6623L2.08237 16.2811L8.49997 9.86347L14.9176 16.2811L16.5363 14.6623L10.1187 8.24472L16.5363 1.82712Z" fill="white"/>
+            </svg>
+         </div>
+    </div>
+</div>
  </body>
 </html>
 

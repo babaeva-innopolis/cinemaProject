@@ -792,7 +792,7 @@ footer > .container_footer{
 .label:hover{
   background: #fff;
   border-color: #BEE956;
-  box-shadow: 0 0 0 2px white, 0 0 0 4px #A3CC40;;
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #A3CC40;
 }
 .label:hover  svg{
 fill: #BEE956;
