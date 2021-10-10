@@ -203,6 +203,7 @@
   }
   
 /* третья страница - таблица */
+/* третья страница - таблица */
 .Block03{
   margin-bottom: 4.35rem;
   overflow: hidden;
@@ -218,6 +219,7 @@ table {
   width: 42.45rem; 
   border-collapse: collapse; 
   margin-bottom: 0.95rem; 
+  border-radius: 0.5rem;
 }
  table td:first-child {
   width: 3.95rem;
@@ -246,10 +248,10 @@ tr.movie-table__row-thead th{
 tr.movie-table__row-thead:first-child > th:last-child{
   border-radius: 0px 0.5rem 0 0;
 }
-tr.movie-table__row-tfoot:first-child > td:first-child{
+table tr:last-child > td:first-child{
   border-radius: 0px 0 0 0.5rem;
 }
-tr.movie-table__row-tfoot:first-child > td:last-child{
+table tr:last-child > td:last-child{
   border-radius: 0px 0px 0.5rem 0;
 }
 tr > .table-tbody .table-tfoot{

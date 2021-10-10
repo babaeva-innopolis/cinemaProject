@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Продажа билетов в кино в Иннополисе</title>
-     <link rel="stylesheet" href="./css/main.css">
+     <link rel="stylesheet" href="../pet/css/grid.css">
      <link rel="stylesheet" href="./css/fonts.css">
      <link rel="stylesheet" href="./css/reset.css">
      <link rel="stylesheet" href="./css/layout.css">
@@ -21,7 +21,6 @@
      <script defer src="./js/owl.carousel.min.js"></script>
      <script defer src="./js/skript.js"></script>
     <script defer src="./js/popap.js"></script>
-    <script defer src="./js/film-table.js"></script>
      
      
      <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -135,44 +134,34 @@
         <div class="container">
             <div class="Block03__row">
                 <p class="header block03__header" id="block1">Выберите фильм</p>
-                <table class="movie-table">
-                    <thead>
-                        <tr class="movie-table__row-thead"> 
-                            <th></th>
-                            <th><a href="#" class="movie-table__sorting">Начало сеанса <img src="./images/Rectangle 2.1 (2).png" alt="галочка" class="arrows" ></a> </th>
-                            <th><a href="#" class="movie-table__sorting">Название фильма <img src="./images/Rectangle 2.1 (3).png" alt="галочка" class="arrows1" ></a> </th>
-                            <th>Жанр</th>
-                        </tr>
-                    </thead>
-                    <tbody id="table-body">
-                        <!-- <tr class="movie-table__row-tbody table-tbody"> 
-                            <td><img src="./images/Rectangle 2 (Stroke).png" alt="галочка" class="check" ></td>                            
-                            <td>10:00 </td>
-                            <td><a target="_blank" href="https://www.kinopoisk.ru/film/838/" title="Кинопоиск">Человек-паук</a></td>
-                            <td>Фантастика, боевик, приключения </td>
-                        </tr>
-                        <tr class="movie-table__row-tbody table-tbody"> 
-                            <td><img src="./images/Rectangle 2 (Stroke).png" alt="галочка" class="check" ></td>                                  
-                            <td>12:00</td>
-                            <td><a  target="_blank" href="https://www.kinopoisk.ru/film/1122114/"title="Кинопоиск">Собачья жизнь 2</a></td>
-                            <td>Фэнтэзи, драма, комедия</td>
-                        </tr>
-                        <tr class="movie-table__row-tbody table-tbody"> 
-                            <td><img src="./images/Rectangle 2 (Stroke).png" alt="галочка" class="check" ></td>  
-                            <td>14:00</td>
-                            <td><a  target="_blank" href="https://www.kinopoisk.ru/film/846824/"title="Кинопоиск">История игрушек 4</a></td>
-                            <td>Мультфильм, фэнтэзи, комедия</td>
-                        </tr> -->
-                    </tbody>
-                    <tfoot>
-                        <!-- <tr class="movie-table__row-tfoot table-tfoot">     
-                            <td ><img src="./images/Rectangle 2 (Stroke).png" alt="галочка" class="check" ></td>                   
-                            <td>16:00</td>
-                            <td><a  target="_blank" href="https://www.kinopoisk.ru/film/693730/"title="Кинопоиск">Люди в чёрном: Интэрнэшнл</a></td>
-                            <td>Фантастика, боевик, комедия</td>
-                        </tr>   -->
-                    </tfoot>
-                </table>
+                <div class="block03__table movie-table">
+                    <div class="block03__table-th"></div>
+                    <div class="block03__table-th"><a href="#" class="movie-table__sorting">Начало сеанса <img src="./images/Rectangle 2.1 (2).png" alt="галочка" class="arrows" ></a></div>
+                    <div class="block03__table-th"><a href="#" class="movie-table__sorting">Название фильма <img src="./images/Rectangle 2.1 (3).png" alt="галочка" class="arrows1" ></a></div>
+                    <div class="block03__table-th">Жанр</div>
+               
+                    <div class="block03__table-td"><img src="./images/Rectangle 2 (Stroke).png" alt="галочка" class="check" ></div>
+                    <div class="block03__table-td">10:00</div>
+                    <div class="block03__table-td"><a target="_blank" href="https://www.kinopoisk.ru/film/838/" title="Кинопоиск">Человек-паук</a></div>
+                    <div class="block03__table-td">Фантастика, боевик, приключения </div>
+
+                    <div class="block03__table-td block03__table-td_dark"><img src="./images/Rectangle 2 (Stroke).png" alt="галочка" class="check" ></div>
+                    <div class="block03__table-td block03__table-td_dark">12:00</div>
+                    <div class="block03__table-td block03__table-td_dark"><a  target="_blank" href="https://www.kinopoisk.ru/film/1122114/"title="Кинопоиск">Собачья жизнь 2</a></div>
+                    <div class="block03__table-td block03__table-td_dark">Фэнтэзи, драма, комедия</div>
+
+                    <div class="block03__table-td"><img src="./images/Rectangle 2 (Stroke).png" alt="галочка" class="check" ></div>
+                    <div class="block03__table-td">14:00</div>
+                    <div class="block03__table-td"><a  target="_blank" href="https://www.kinopoisk.ru/film/846824/"title="Кинопоиск">История игрушек 4</a></div>
+                    <div class="block03__table-td">Мультфильм, фэнтэзи, комедия</div>
+
+                    <div class="block03__table-td block03__table-td_dark"><img src="./images/Rectangle 2 (Stroke).png" alt="галочка" class="check" ></div>
+                    <div class="block03__table-td block03__table-td_dark">16:00</div>
+                    <div class="block03__table-td block03__table-td_dark"><a  target="_blank" href="https://www.kinopoisk.ru/film/693730/"title="Кинопоиск">Люди в чёрном: Интэрнэшнл</a></div>
+                    <div class="block03__table-td block03__table-td_dark">Фантастика, боевик, комедия</div>
+
+
+                </div>
                 
                 <div class="block03__text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
                     do eiusmod tempor incididunt ut labore et dolore <br>  
@@ -599,5 +588,6 @@
 </div>
  </body>
 </html>
+
 
 
