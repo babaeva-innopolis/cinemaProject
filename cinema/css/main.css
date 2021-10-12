@@ -159,6 +159,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
     width: 43.2rem;
+    justify-content: space-between;
   }
   .block02__col1,
   .block02__col2{
