@@ -1,0 +1,33 @@
+*{
+    font-size: 25px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 100px ;
+    border: 1px solid;
+    grid-template-areas: "area1 area2 area3"
+                         "area1 area4 area5";
+                          
+   
+}
+.item2{
+background-color: gray;
+grid-row: span 2;
+
+}
+.item4{
+    grid-area: area3;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 100px ;
+    grid-auto-flow: dense;
+    gap: 262px 0;
+    
+}
+.item3{
+  
+    grid-row: span 3;
+}
