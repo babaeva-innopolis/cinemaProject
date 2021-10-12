@@ -398,7 +398,9 @@ th > a{
 /* пятая страница -фильмы */
 
 .block05__inner{
- overflow: hidden; 
+ /* overflow: hidden;  */
+ display: flex;
+ flex-wrap: wrap;
  margin-left: 4px;
 }
 .block05__movie1{
@@ -418,6 +420,8 @@ th > a{
   transition: 0.3s;
 }
 .block05__descr{
+  display: flex;
+  flex-direction: column;
   background: rgba(144, 210, 61, 0.4);
   position: absolute;
   left: 0;
