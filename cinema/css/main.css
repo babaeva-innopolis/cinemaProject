@@ -158,16 +158,16 @@
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    width: 43.2rem;
+    /* width: 43.2rem; */
     justify-content: space-between;
   }
   .block02__col1,
   .block02__col2{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-left: 3px;
+    flex-wrap: nowrap;
+    /* width: 100%; */
+    /* margin-left: 3px; */
     margin-bottom: 2.35rem;
   }
   .block02__visit-card{
@@ -176,6 +176,9 @@
     background-color: #A3CC40;
     border-radius: 0.6rem;
     padding-bottom: 0.35rem;
+    flex-basis: 33.33%;
+    display: flex;
+    flex-direction: column;
    
   }
   .visit-card-2{
@@ -191,7 +194,7 @@
     transform: scale(1.2);
   }
  .block02__visit-card > p{
-    width: 12.25rem;
+    /* width: 12.25rem; */
     text-align: center;
   }
 
@@ -402,13 +405,13 @@ th > a{
  /* overflow: hidden;  */
  display: flex;
  flex-wrap: wrap;
- margin-left: 4px;
+ /* margin-left: 4px; */
 }
 .block05__movie1{
-  float: left;
-  width: 33.33%;
+  
+  flex-basis: 33.33%;
   position: relative;
-  overflow: hidden;
+ 
   cursor: pointer;
 }
 .block05__shadow{
