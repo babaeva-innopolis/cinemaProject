@@ -174,15 +174,20 @@
             color: #A3CC40;
             font-size: 2.05rem;
         }
+        .owl-nav span{
+            font-size: 3.2rem;
+            color: #A3CC40;
+        }
+        
         .owl-nav > .owl-prev{
             position: absolute;
-            left: 12.9rem;
-            top: 5.65rem;
+            left: 12.8rem;
+            top: 4.65rem;
             
         }
         .owl-nav > .owl-next{
             position: absolute;
             right: 15.7rem;
-            top: 5.45rem; 
+            top: 4.65rem; 
            
         }
