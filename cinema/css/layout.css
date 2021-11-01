@@ -109,6 +109,9 @@ a{
         border: 1px solid #A3CC40;
         border-radius: 0.25rem;
         }
+        input[type="checkbox2"]  {
+            display: none;
+        }
         input[type="radio"] + label::before {
         border-radius: 100%;
         }

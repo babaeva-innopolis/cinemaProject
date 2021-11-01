@@ -60,7 +60,7 @@
  }
  .block01__call:hover{
    border-color: #EAEDE2;
-   background: #A3CC40;
+   background: #777776;
  }
  .block01__call:hover svg{
    fill: #fff;
@@ -318,8 +318,18 @@ th > a{
   height: 0.397rem;
   padding: 0 0px 0 0px; 
   color: #FFFFFF;   
-  margin-left: 1.25rem;      
+  margin-left: 1.25rem; 
+  transition: .1s linear;
+  display: inline-block;  
+  cursor: pointer;   
 } 
+.check:hover svg{
+  fill: #BEE956;
+  color: #BEE956;
+  stroke: #BEE956;
+}
+
+
 /* четверная страница-подарок каждому */
 
 .block04__row{
