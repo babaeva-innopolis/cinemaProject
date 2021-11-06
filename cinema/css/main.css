@@ -315,7 +315,7 @@ th > a{
 }   
 .check{
   width: 0.5rem;
-  height: 0.397rem;
+  height: 0.89rem;
   padding: 0 0px 0 0px; 
   color: #FFFFFF;   
   margin-left: 1.25rem; 
@@ -323,7 +323,7 @@ th > a{
   display: inline-block;  
   cursor: pointer;   
 } 
-.check:hover svg{
+.check:hover {
   fill: #BEE956;
   color: #BEE956;
   stroke: #BEE956;
@@ -622,7 +622,7 @@ height: 26.35rem;
   flex: 0 0 48%;
   position: relative;
   background: url(../images/audience.jpg);
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-position: center;
   }
 .block08__right{

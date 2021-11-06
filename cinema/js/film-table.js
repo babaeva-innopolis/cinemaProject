@@ -1,8 +1,21 @@
 const films = [
 {
+    time: "09:00",
+    rate: "G",
+    name: "История игрушек 4",
+    genres: ["Фэнтэзи", "драма", "комедия"],
+},
+{
     time: "10:00",   
+    id: 15,
     name: "Человек-паук",
     genres: ["Фантастика", "боевик", "приключения"],
+},
+{
+    time: "11:00",
+    rate: "G",
+    name: "Собачья жизнь",
+    genres: ["Фэнтэзи", "драма", "комедия"],
 },
 {
     time: "12:00",
@@ -41,15 +54,32 @@ console.log(document);
 let tbody = document.getElementById('table-body');
 console.log(tbody.innerHTML );
 tbody.innerHTML = '';
+const filmHelper = {
+getId() {
+    return this.id || "${this.name.replaceAll(' ','-')}-${this.time}"
+},
+getTitle() {
+    return this.name;
+},
+getTime() {
+    return this.time;
+},
+getGenres() {
+    return this.genres.join(', ');
+}
+
+
+};
+
 function renderFilmTableItem(film){
     return`<tr class="movie-table__row-tbody table-tbody"> 
     <td>
     <input 
     type="checkbox2"
     class="block03__checkbox2"
-    id= "${film.name.replaceAll(' ','-')}-${film.time}"
+    id= "${filmHelper.getId.apply(film)}"
     />
-    <label for="${film.name.replaceAll(' ','-')}-${film.time}">
+    <label for="${filmHelper.getId.apply(film)}">
     <svg class="check"
     width=".55rem"
      height=".45rem" 
@@ -62,9 +92,9 @@ clip-rule="evenodd" d="M4.60581 8.79378L1.46056 5.93033L0.787354 6.66979L4.70255
 
     </label>
   </td>                            
-    <td>${film.time}</td>
-    <td>${film.name}</td>
-    <td>${film.genres.join(', ')}</td>
+    <td>${filmHelper.getTime.apply(film)}</td>
+    <td>${filmHelper.getTitle.apply(film)}</td>
+    <td>${filmHelper.getGenres.apply(film)}</td>
 </tr>
 `;
 }
