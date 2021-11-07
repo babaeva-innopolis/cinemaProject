@@ -624,6 +624,7 @@ height: 26.35rem;
   background: url(../images/audience.jpg);
   /* background-repeat: no-repeat; */
   background-position: center;
+  width: 100%;
   }
 .block08__right{
   flex: 0 0 52%;
@@ -642,7 +643,8 @@ right: 0;
   width: 17.2rem;
   margin: 0.25rem 0 0 2px;
 }
-.block08__label{
+.block08__label,
+.popup__label{
   position: relative;
   background: #DEDEDE;
   border-radius: 0.25rem;
@@ -651,7 +653,8 @@ right: 0;
   margin-top: 1.1rem;
   height: 1.85rem;
 }
-.block08__input{
+.block08__input,
+.popup__input{
   display: block;
   width: 100%;
   background: transparent;
@@ -659,7 +662,8 @@ right: 0;
   border: 0;
   padding: 0.3rem 0.35rem;
 }
-.block08__text{
+.block08__text,
+popup__text{
   position: absolute;
   font-size: 0.75rem;
   font-weight: 400;
@@ -667,23 +671,27 @@ right: 0;
   color: #A1A1A1;
   
 }
-.block08__text-name{
+.block08__text-name,
+.popup__text-name{
   top: 0.6rem;
   left: 0.8rem;
   transition: 0.2s;
 }
-#place{
+#place,
+#prize{
   border-radius: 0.25rem;
   background: #DEDEDE;
   border: 0;
-  padding: 0 0 0.9rem 0;
+  padding: 0 0 0.2rem 0;
 }
-.block08__form-select{
-  margin-top: 1.7rem;
-  margin-bottom: 1.65rem;
+.block08__form-select,
+.popup__form-select{
+  margin-top: 1.5rem;
+  margin-bottom: 0.05rem;
   
 }
-.block08__text_place{
+.block08__text_place,
+.popup__text_prize{
   top: 0.55rem;
   left: 0.85rem;
   transition: 0.2s;
@@ -706,22 +714,32 @@ right: 0;
 .block08__checkbox{
   margin-bottom: 2.4rem;
 }
-.block08__checkbox-text > p{
+.block08__checkbox-text > p
+{
   font-weight: 400;
   font-size: 0.5rem;
   line-height: 1.3;
   padding-left: 1.25rem;
   padding-top: 2px;
 }
-.block08__label_filled .block08__name{
+.block08__label-filled .block08__label,
+.popup__label-filled .popup__label{
   top: -0.6rem;
   background: #FFFFFF;
   padding: 0 0.25rem;
   left: 0.5rem;
 }
-.block08__label_filled{
+
+.block08__label-filled,
+.popup__label-filled{
   background: #FFFFFF;
   box-shadow: 0 0 0 0.25rem rgba(170, 243, 77, 0.52);
+ display: none;
+}
+.block08__label-empty,
+.popup__label-empty{
+  background: #FFFFFF;
+  box-shadow: 0 0 0 0.25rem rgba(231, 52, 7, 0.815);
  display: none;
 }
 /* нижний колонтитул */

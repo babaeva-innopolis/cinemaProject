@@ -452,12 +452,17 @@
                            
                        </div>
                        <div class="block08__form">
-                        <label class="block08__label block08__label_filled" for="name">
+                        <label class="block08__label block08__label-filled" for="name">
                             <p class="block08__text block08__text-name ">Полное имя</p> 
                             <input class="block08__input" type="text" name="name" id="name" placeholder="" required>
                         </label>
-                            
                         </div>
+                        <div class="block08__form">
+                            <label class="block08__label block08__label-empty" for="name">
+                                <p class="block08__text block08__text-name ">Полное имя</p> 
+                                <input class="block08__input" type="text" name="name" id="name" placeholder="" required>
+                            </label>
+                            </div>
                        
                        <div class="block08__form block08__form-select">
                            <label class="block08__label " for="place" >
@@ -601,16 +606,39 @@
 <div class="popup hidden">
     <div class="popup__form">
         <label class="popup__label" for="name">
-            <p class="popup__text popap__text-name">Полное имя</p> 
+            <p class="popup__text popap__text-name">Введите имя</p> 
             <input class="popup__input" type="text" name="name" id="name-popap" placeholder="" required>
-         </label>   
-         <label class="popup__label" for="name">
+         </label>  
+         <label class="popup__label popup__label-filled" for="name">
+            <p class="popup__text popap__text-name">Введите имя</p> 
+            <input class="popup__input" type="text" name="name" id="name-popap-filled" placeholder="" required>
+         </label> 
+         <label class="popup__label popup__label-empty" for="name">
+            <p class="popup__text popap__text-name">Введите имя</p> 
+            <input class="popup__input" type="text" name="name" id="name-popap-empty" placeholder="" required>
+         </label>  
+         <label class="popup__label" for="email">
              <p class="popup__text popup__text-name">mail</p> 
-             <input class="popup__input" type="text" name="name" id="mail-popup" placeholder="" required>
+             <input class="popup__input" type="text" name="email" id="mail-popup" placeholder="" required>
          </label>
-    
+         <div class="popup__form-select">
+            <label class="popup__label " for="prize" >
+             <p class="popup__text popup__text_prize">Выбери подарок</p>    
+             <select name="prize" id="prize" placeholder="" required>
+                 <optgroup label="Name1">
+                     <option value=""></option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                  </optgroup>
+              </select>
+            </label>
+        </div>
+        <div class="popup__checkbox">
+            <input type="checkbox" id="checkbox_popup">
+            <label class="block08__checkbox-text" for="checkbox"><p>Я согласен на обработку своих персональных данных</p> </label>
+        </div>
          <div class="popup__button button_big">
-             <input  type="submit" value="послать"></div>               
+             <input  type="submit" value="Отправить"></div>               
        <div id="popupExit" class=popup__button-exit>
         <svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M16.5363 1.82712L14.9176 0.208374L8.49997 6.62597L2.08237 0.208374L0.463623 1.82712L6.88122 8.24472L0.463623 14.6623L2.08237 16.2811L8.49997 9.86347L14.9176 16.2811L16.5363 14.6623L10.1187 8.24472L16.5363 1.82712Z" fill="white"/>
