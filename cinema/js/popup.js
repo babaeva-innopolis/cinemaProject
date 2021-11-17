@@ -1,22 +1,23 @@
-const popup = document.getElementById("prize-popup");
+const prizeForm = document.getElementById("prize-popup");
 const openBtn = document.getElementById("popupOpen");
 const closeBtn = document.getElementById("popupExit");
-const nameField = document.querySelector("#prize-popup input[name='name']").parentNode;
-const emailField = document.querySelector("#prize-popup input[name='email']").parentNode;
+const nameInputWrapper = document.querySelector("#prize-popup input[name='name']").parentNode;
+const emailInputWrapper = document.querySelector("#prize-popup input[name='email']").parentNode;
 
-console.log(nameField, emailField);
+console.log(nameInputWrapper, emailInputWrapper);
 
 function popupToggle(){
-    popup.classList.toggle("hidden");
+    prizeForm.classList.toggle("hidden");
 }
-function initializeForm(field){
+function initializeField(field){
 const input = field.getElementsByTagName("input")[0];
-
-input.value = "";
+const errorText = field.querySelector('st-input1__error-msg');
+input.value = '';
+errorText.innerText = '';
 
 }
-initializeForm(nameField);
-initializeForm(emailField);
+initializeField(nameInputWrapper);
+initializeField(emailInputWrapper);
 
 openBtn.onclick = popupToggle;
 closeBtn.onclick = popupToggle;

@@ -47,6 +47,13 @@ const films = [
     name: "Люди в чёрном: Интэрнэшнл",
     genres: ["Фантастика", "боевик", "комедия"],
 },
+{
+    time: "22:30",
+    rate: "G",
+    name: "История игрушек 1",
+    genres: ["Мультфильм", "фэнтэзи", "комедия"],
+},
+
 ];
 
 
@@ -56,23 +63,14 @@ console.log(tbody.innerHTML );
 tbody.innerHTML = '';
 
 
-for (let film of films) {
-    if (!(film.rate === 'R' || film.rate === 'NC-17')) {
+for (const film of films) {
         const filmItem = new Film(film);
-        tbody.innerHTML += filmItem.renderFilmTableItem(film);
+        if (filmItem.isNotForAdult()) {
+        tbody.innerHTML += filmItem.renderFilmTableItem();
     }
 }
 
-// for (let index = 0; index < films.length; index++) {
-//     tbody.innerHTML +=`<tr class="movie-table__row-tbody table-tbody"> 
-//     <td><img src="./images/Rectangle 2 (Stroke).png" alt="галочка" class="check"></td>                            
-//     <td>${films[index].time}</td>
-//     <td>${films[index].name}</td>
-//     <td>${films[index].genres.join(', ')}</td>
-// </tr>
-// `;
 
-// }
 
 
 

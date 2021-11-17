@@ -16,13 +16,15 @@
      <link rel="stylesheet" href="./css/popup.css">
 
      <link rel="stylesheet" href="./css/owl.carousel.min.css">
-<link rel="stylesheet" href="./css/owl.theme.default.min.css">
+     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
      <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-     <script defer src="./js/owl.carousel.min.js"></script>
-     <script defer src="./js/skript.js"></script>
-    <script defer src="./js/popup.js"></script>
-    <script defer src="./js/film.js"></script>
-    <script defer src="./js/film-table.js"></script>
+     <script defer src="./libs/owl.carousel.min.js"></script>
+     <script defer src="./target/skript.js"></script>
+     <script defer src="./target/popup.js"></script>
+     <script defer src="./target/utils.js"></script>
+     <script defer src="./target/film.js"></script>
+     <script defer src="./target/film-table.js"></script>
      
      
      <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -441,32 +443,19 @@
                     <!-- <a class="block08__gradient" href="#"><img src="../cinema/images/audience.jpg" alt=""></a> -->
                 </div>
                 <div class="block08__right">
-                  <form action="order.php"> 
+                  <form class="block08_form" action="order.php"> 
                         <div class="block08__form block08__title">
                             <p id="block5">Обратная связь</p>
                        </div>
                        <div class="block08__form">
-                       <label class="block08__label" for="name">
-                           <p class="block08__text block08__text-name">Полное имя</p> 
-                           <input class="block08__input" type="text" name="name" id="name" placeholder="" required>
-                        </label>
-                           
-                       </div>
-                       <div class="block08__form">
-                        <label class="block08__label block08__label-filled" for="name">
-                            <p class="block08__text block08__text-name ">Полное имя</p> 
-                            <input class="block08__input" type="text" name="name" id="name" placeholder="" required>
-                        </label>
-                        </div>
-                        <div class="block08__form">
-                            <label class="block08__label block08__label-empty" for="name">
-                                <p class="block08__text block08__text-name ">Полное имя</p> 
+                            <label class="block08__label block08__label-hover block08__label-filled block08__label-empty" for="name">
+                                <p class="block08__text block08__text-name">Полное имя</p> 
                                 <input class="block08__input" type="text" name="name" id="name" placeholder="" required>
                             </label>
-                            </div>
-                       
+                        </div>
+                                       
                        <div class="block08__form block08__form-select">
-                           <label class="block08__label " for="place" >
+                           <label class="block08__label block08__label-hover block08__label-filled block08__label-empty" for="place" >
                             <p class="block08__text block08__text_place">Номер места</p>    
                             <select name="place" id="place" placeholder="" required>
                                 <optgroup label="Name1">
@@ -486,15 +475,18 @@
                          
                        </div>
                        <div class="block08__form block08__review">
-                           <label for="review" class="block08__label">
+                           <label for="review" class="block08__textarea block08__textarea-hover">
                             <p class="block08__text block08__text-review">Напишите свой отзыв</p>    
                             <textarea name="review" id="review" placeholder=""></textarea>
                            </label>
                           
                        </div>
                        <div class="block08__form block08__checkbox ">
-                           <input type="checkbox" id="checkbox">
-                           <label class="block08__checkbox-text" for="checkbox"><p>Я согласен на обработку своих персональных данных</p> </label>
+                        <input type="checkbox" id="checkbox">
+                           <label class="block08__checkbox-text" for="checkbox"> 
+                               
+                               <p>Я согласен на обработку своих персональных данных</p> 
+                            </label>
                        </div>
                        <div class="block08__form">
                         <p class="block08__button button_big"><input type="submit" value="послать"></p>               
@@ -604,50 +596,68 @@
             <path d="M98.9906 24.5247C97.9994 24.5247 96.9814 24.4943 95.9901 24.5247C96.9814 24.5247 97.9726 24.5247 98.9906 24.5247C99.9551 24.5247 100.92 24.5247 101.884 24.5247C100.893 24.5552 99.9551 24.5247 98.9906 24.5247Z" fill="white"/>
             </symbol>
     </svg> 
-    <div id="prize-popup" class="popup hidden">
+    <form id="prize-popup" class="popup hidden">
+        <div class="form-wrapper">
+           
+            <div class="form-inputs popup__form">
+                <label class="st-input1 popup__label popup__label-filled popup__label-empty" for="name">
+                    <p class="popup__text popap__text-name ">Введите имя</p> 
+                    <input 
+                        class="popup__input" 
+                        type="text" 
+                        name="name" 
+                        value="Имя" 
+                        id="name-popap" 
+                        placeholder="" 
+                        required>
+                    <p class="st-input1__error-msg" >Error message</p>
+                </label>  
+                <label class="popup__label popup__label-filled popup__label-empty" for="email">
+                     <p class="popup__text popup__text-name">e-mail</p> 
+                     <input 
+                     class="popup__input" 
+                     type="text" name="email" 
+                     value="example@mail.com" 
+                     id="mail-popup" 
+                     placeholder="" 
+                     required>
+                    <p class="st-input1__error-msg" >Error message</p>
+                    </label>
+                 <div class="popup__form-select popup__label popup__label-filled popup__label-empty">
+                     <select 
+                     name="prize" 
+                     id="prize" 
+                     class="input-text input-select" 
+                     placeholder="" required>
+                         <optgroup class="" label="Name1">
+                             <option value="none" disabled selected>Выберите подарок</option>
+                             <option value="doublePop">Удвоим попкорн</option>
+                             <option value="thirdTicket">Третий билет бесплатно</option>
+                          </optgroup>
+                      </select>
+                </div>
+                <div class="popup__checkbox">
+                    <input 
+                        type="checkbox" 
+                        id="checkbox_popup"
+                        class="input-checkbox">
+                    <label class="block08__checkbox-text" for="checkbox"><p>Я согласен на обработку своих персональных данных</p> </label>
+                </div>
+                 <div class="popup__button button_big">
+                     <input  type="submit" value="Отправить"></div>               
+                 
+            
+                    </div>
+            
+                    <div id="popupExit" class=popup__button-exit>
+                        <svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.5363 1.82712L14.9176 0.208374L8.49997 6.62597L2.08237 0.208374L0.463623 1.82712L6.88122 8.24472L0.463623 14.6623L2.08237 16.2811L8.49997 9.86347L14.9176 16.2811L16.5363 14.6623L10.1187 8.24472L16.5363 1.82712Z" fill="white"/>
+                        </svg>
+            </div>
+        </div>
        
-        <div class="popup__form">
-        <label class="popup__label" for="name">
-            <p class="popup__text popap__text-name">Введите имя</p> 
-            <input class="popup__input" type="text" name="name" value="Имя" id="name-popap" placeholder="" required>
-         </label>  
-         <label class="popup__label popup__label-filled" for="name">
-            <p class="popup__text popap__text-name">Введите имя</p> 
-            <input class="popup__input" type="text" name="name" id="name-popap-filled" placeholder="" required>
-         </label> 
-         <label class="popup__label popup__label-empty" for="name">
-            <p class="popup__text popap__text-name">Введите имя</p> 
-            <input class="popup__input" type="text" name="name" id="name-popap-empty" placeholder="" required>
-         </label>  
-         <label class="popup__label" for="email">
-             <p class="popup__text popup__text-name">mail</p> 
-             <input class="popup__input" type="text" name="email" value="example@mail.com" id="mail-popup" placeholder="" required>
-         </label>
-         <div class="popup__form-select">
-            <label class="popup__label " for="prize" >
-             <p class="popup__text popup__text_prize">Выбери подарок</p>    
-             <select name="prize" id="prize" placeholder="" required>
-                 <optgroup label="Name1">
-                     <option value=""></option>
-                     <option value="1">1</option>
-                     <option value="2">2</option>
-                  </optgroup>
-              </select>
-            </label>
-        </div>
-        <div class="popup__checkbox">
-            <input type="checkbox" id="checkbox_popup">
-            <label class="block08__checkbox-text" for="checkbox"><p>Я согласен на обработку своих персональных данных</p> </label>
-        </div>
-         <div class="popup__button button_big">
-             <input  type="submit" value="Отправить"></div>               
-         <div id="popupExit" class=popup__button-exit>
-                <svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16.5363 1.82712L14.9176 0.208374L8.49997 6.62597L2.08237 0.208374L0.463623 1.82712L6.88122 8.24472L0.463623 14.6623L2.08237 16.2811L8.49997 9.86347L14.9176 16.2811L16.5363 14.6623L10.1187 8.24472L16.5363 1.82712Z" fill="white"/>
-                    </svg>
-        </div>
-        </div>
-    </div>
+        
+    </form>
  </body>
 </html>
 

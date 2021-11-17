@@ -4,24 +4,24 @@
     top: 0;
     right: 0;
     bottom: 0;
-   
-    margin: 0.75rem;
     background-color: rgba(51, 51, 51, 0.54);
-    padding: 1.55rem;
     z-index: 10;
 
 }
 .hidden{
 display: none; 
 }
-.popup__form{
-   position: relative;
+.form-wrapper{
+  position: relative;
     background-color: #fff;
     max-width: 28rem;
     max-height: 19.6rem;
-    margin: 8rem auto;
+  
     border-radius: 2.5rem;
     padding: 2rem;
+}
+.popup__form{
+   
   }
   .popup__checkbox-text > p
 {

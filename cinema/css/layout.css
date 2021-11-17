@@ -71,7 +71,7 @@ a{
 .relative{
         position: relative;
       } 
-      form {
+      .block08_form {
         width: 17.2rem;
         margin: 0 0.5rem;
         }
@@ -116,7 +116,7 @@ a{
         border-radius: 100%;
         }
         input[type="textarea"] {
-        height: 12.5rem;
+        /* height: 12.5rem; */
         resize: none;
         }
         input[type="file"] {
