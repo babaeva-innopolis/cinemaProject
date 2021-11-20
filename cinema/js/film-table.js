@@ -57,9 +57,8 @@ const films = [
 ];
 
 
-console.log(document);
+
 let tbody = document.getElementById('table-body');
-console.log(tbody.innerHTML );
 tbody.innerHTML = '';
 
 

@@ -2,17 +2,18 @@
 
 ## установка зависимости
 
-shell```
+```shell
 npm install  @babel/core @babel/cli
 preset-env 
 ```
 
 ## запуск Babael
-shell```
+```shell
 npx babel js -d target 
 ```
 
 ## Запуск babel  с автоматической пересборкой
-shell```
+```shell
+
 npx babel js -d target --watch
 ```

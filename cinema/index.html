@@ -20,9 +20,13 @@
 
      <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
      <script defer src="./libs/owl.carousel.min.js"></script>
+     <script defer src="./target/utils.js"></script>
+
+     <script defer src="./target/block-films.js"></script>
      <script defer src="./target/skript.js"></script>
      <script defer src="./target/popup.js"></script>
-     <script defer src="./target/utils.js"></script>
+     <script defer src="./target/form.js"></script>
+     
      <script defer src="./target/film.js"></script>
      <script defer src="./target/film-table.js"></script>
      
@@ -219,7 +223,7 @@
                 <p class="block05__text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                 ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel 
                 quam elementum pulvinar etiam non quam.</p>
-             <div class="block05__inner">
+             <div class="block05__inner" id="block-films-wrapper">
                     <div class="block05__movie1">
                             <div class="block05__bg">   
                             <img src="./images/survivor.jpg" alt="Выживший">
@@ -440,10 +444,10 @@
                     <div class="block08__shadow">
 
                     </div>
-                    <!-- <a class="block08__gradient" href="#"><img src="../cinema/images/audience.jpg" alt=""></a> -->
+                    
                 </div>
                 <div class="block08__right">
-                  <form class="block08_form" action="order.php"> 
+                  <form class="block08__form-feedback" id="form-feedback" action="order.php"> 
                         <div class="block08__form block08__title">
                             <p id="block5">Обратная связь</p>
                        </div>
@@ -482,7 +486,7 @@
                           
                        </div>
                        <div class="block08__form block08__checkbox ">
-                        <input type="checkbox" id="checkbox">
+                        <input type="checkbox" class="block__08_custom-checkbox" id="checkbox">
                            <label class="block08__checkbox-text" for="checkbox"> 
                                
                                <p>Я согласен на обработку своих персональных данных</p> 
@@ -598,7 +602,13 @@
     </svg> 
     <form id="prize-popup" class="popup hidden">
         <div class="form-wrapper">
-           
+            <div id="popupExit" class="popup__button-exit">
+                <svg viewBox="0 0 17 17" 
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.5363 1.82712L14.9176 0.208374L8.49997 6.62597L2.08237 0.208374L0.463623 1.82712L6.88122 8.24472L0.463623 14.6623L2.08237 16.2811L8.49997 9.86347L14.9176 16.2811L16.5363 14.6623L10.1187 8.24472L16.5363 1.82712Z" fill="white"/>
+                </svg>
+            </div>
             <div class="form-inputs popup__form">
                 <label class="st-input1 popup__label popup__label-filled popup__label-empty" for="name">
                     <p class="popup__text popap__text-name ">Введите имя</p> 
@@ -623,7 +633,7 @@
                      required>
                     <p class="st-input1__error-msg" >Error message</p>
                     </label>
-                 <div class="popup__form-select popup__label popup__label-filled popup__label-empty">
+                 <div class="popup__form-select ">
                      <select 
                      name="prize" 
                      id="prize" 
@@ -637,23 +647,18 @@
                       </select>
                 </div>
                 <div class="popup__checkbox">
-                    <input 
-                        type="checkbox" 
-                        id="checkbox_popup"
-                        class="input-checkbox">
-                    <label class="block08__checkbox-text" for="checkbox"><p>Я согласен на обработку своих персональных данных</p> </label>
+                    <input type="checkbox" class="custom-checkbox" id="checkbox-prize">
+                       <label class="block08__checkbox-text" for="checkbox"> 
+                           <p>Я согласен на обработку своих персональных данных</p> 
+                        </label>
                 </div>
                  <div class="popup__button button_big">
                      <input  type="submit" value="Отправить"></div>               
                  
             
-                    </div>
-            
-                    <div id="popupExit" class=popup__button-exit>
-                        <svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16.5363 1.82712L14.9176 0.208374L8.49997 6.62597L2.08237 0.208374L0.463623 1.82712L6.88122 8.24472L0.463623 14.6623L2.08237 16.2811L8.49997 9.86347L14.9176 16.2811L16.5363 14.6623L10.1187 8.24472L16.5363 1.82712Z" fill="white"/>
-                        </svg>
             </div>
+            
+            
         </div>
        
         

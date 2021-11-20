@@ -46,9 +46,7 @@ var films = [{
   name: "История игрушек 1",
   genres: ["Мультфильм", "фэнтэзи", "комедия"]
 }];
-console.log(document);
 var tbody = document.getElementById('table-body');
-console.log(tbody.innerHTML);
 tbody.innerHTML = '';
 
 for (var _i = 0, _films = films; _i < _films.length; _i++) {
