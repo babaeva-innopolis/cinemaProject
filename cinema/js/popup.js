@@ -3,7 +3,7 @@ const openBtn = document.querySelector('#popupOpen');
 const closeBtn = document.querySelector('#popupExit');
 const nameInputWrapper = document.querySelector('#prize-popup input[name="name"]').parentNode;
 const emailInputWrapper = document.querySelector('#prize-popup input[name="email"]').parentNode;
-const prizeSelect = document.querySelector('#prize')
+
 
 
 
@@ -78,6 +78,10 @@ prizeForm.addEventListener('submit', function(event){
     const nameValue = nameField.getValue();
     const emailValue = emailField.getValue();
 
+    const prizeSelect = document.querySelector('#prize');
+    const checkbox = document.getElementById("checkbox-prize");
+     
+
     if (!nameValue) {
         nameField.setError('Поле обязательно для заполнения');
         nameField.focus();
@@ -96,6 +100,8 @@ prizeForm.addEventListener('submit', function(event){
         prizeSelect.classList.add(INPUT_ERROR_CLASS);
         return
     }
+    
+    
     const data = {
         name: nameValue,
         email: emailValue,
@@ -103,6 +109,15 @@ prizeForm.addEventListener('submit', function(event){
     }
     const url = new URL ('http://inno-ijl.ru/multystub/stc-21-03/feedback');
     url.search = new URLSearchParams(data).toString();
+     if (checkbox.checked) {
+            fetch(url.toString());
+    }
+    
+    });
 
-    fetch(url.toString());
+        
+    
+   
+
+    
 });

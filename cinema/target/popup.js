@@ -5,7 +5,6 @@ var openBtn = document.querySelector('#popupOpen');
 var closeBtn = document.querySelector('#popupExit');
 var nameInputWrapper = document.querySelector('#prize-popup input[name="name"]').parentNode;
 var emailInputWrapper = document.querySelector('#prize-popup input[name="email"]').parentNode;
-var prizeSelect = document.querySelector('#prize');
 var INPUT_ERROR_CLASS = 'popup__label-empty';
 var INPUT_FOCUS_CLASS = 'popup__label-filled';
 
@@ -64,6 +63,8 @@ prizeForm.addEventListener('submit', function (event) {
   event.preventDefault();
   var nameValue = nameField.getValue();
   var emailValue = emailField.getValue();
+  var prizeSelect = document.querySelector('#prize');
+  var checkbox = document.getElementById("checkbox-prize");
 
   if (!nameValue) {
     nameField.setError('Поле обязательно для заполнения');
@@ -89,5 +90,10 @@ prizeForm.addEventListener('submit', function (event) {
   };
   var url = new URL('http://inno-ijl.ru/multystub/stc-21-03/feedback');
   url.search = new URLSearchParams(data).toString();
-  fetch(url.toString());
+
+  if (checkbox.checked) {
+    fetch(url.toString());
+  } else {
+    alert('Чтобы отправить необходимо дать согласие');
+  }
 });
