@@ -88,8 +88,7 @@ a{
         select {
         -webkit-appearance: none; -moz-appearance: none;
         appearance: none;
-        background: url(../img/down-arrow.svg) 96% center / 5% no-repeat
-        #fff;
+        background: url(../images/Vector\ \(1\).svg) 96% center / 5% no-repeat  #fff;
         }
         input[type="radio"], input[type="checkbox"] {
         display: none;

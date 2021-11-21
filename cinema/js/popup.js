@@ -86,8 +86,6 @@ prizeForm.addEventListener('submit', function(event){
         nameField.setError('Поле обязательно для заполнения');
         nameField.focus();
         return;
-
-    
     }
     if (!emailValue) {
         emailField.setError('Поле обязательно для заполнения');
@@ -113,11 +111,11 @@ prizeForm.addEventListener('submit', function(event){
             fetch(url.toString());
     }
     
-    });
+});
 
         
     
    
 
     
-});
+

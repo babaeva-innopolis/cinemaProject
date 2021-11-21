@@ -93,7 +93,5 @@ prizeForm.addEventListener('submit', function (event) {
 
   if (checkbox.checked) {
     fetch(url.toString());
-  } else {
-    alert('Чтобы отправить необходимо дать согласие');
   }
 });
