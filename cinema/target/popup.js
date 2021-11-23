@@ -95,3 +95,4 @@ prizeForm.addEventListener('submit', function (event) {
     fetch(url.toString());
   }
 });
+//# sourceMappingURL=popup.js.map

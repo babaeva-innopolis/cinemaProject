@@ -95,3 +95,4 @@ var getBlockFilmsData = /*#__PURE__*/function () {
 }();
 
 getBlockFilmsData();
+//# sourceMappingURL=block-films.js.map

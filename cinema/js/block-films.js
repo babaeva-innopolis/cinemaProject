@@ -12,9 +12,11 @@ const getKinopoiskApiData = (url) => {
         }
     });
 }
+
 const getTopFilms = () => {
     return getKinopoiskApiData('https://kinopoiskapiunofficial.tech/api/v2.2/films/top?type=TOP_AWAIT_FILMS&page=1');
 }
+
 const getFilmDetails = (id) => {
     return getKinopoiskApiData(`https://kinopoiskapiunofficial.tech/api/v2.2/films/${id}`);
 }
@@ -23,7 +25,7 @@ const getBlockFilmsData = async () => {
     const answer = await getTopFilms();
     const data = await answer.json();
 
-    data.films.forEach(async (film) => {
+    data.films.forEach(async film => {
         const filmDescId = `block-films-des-${film.filmId}`;
         blockFilmsWrapper.innerHTML +=`
         <div class="block05__movie1">
