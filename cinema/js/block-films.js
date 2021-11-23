@@ -22,34 +22,61 @@ const getFilmDetails = (id) => {
 }
 
 const getBlockFilmsData = async () => {
-    const answer = await getTopFilms();
-    const data = await answer.json();
-
-    data.films.forEach(async film => {
-        const filmDescId = `block-films-des-${film.filmId}`;
-        blockFilmsWrapper.innerHTML +=`
-        <div class="block05__movie1">
-            <div class="block05__bg">   
-                 <img src="${film.posterUrlPreview}" alt="">
-             </div>
-             <div class="block05__shadow"></div>
-             <div class="block05__descr">
-                    <div class="block05__text2">${film.nameRu}</div>
-                    <div class="block05__text3" id="${filmDescId}"></div>
-             </div>
-        </div>
-        `;
-
-        const answer = await getFilmDetails(film.filmId);
-        const filmData = await answer.json();
-
-        const descElement = document.getElementById(filmDescId);
-        descElement.innerText = filmData.description
-        if (!filmData.description) {
-            blockFilmsWrapper.removeChild(descElement.parentNode.parentNode);
+    try{
+        const answer = await getTopFilms();
+        const data = await answer.json();
+    
+        data.films.forEach(async film => {
+            const wrapper = document.createElement('div');
+            wrapper.classList.add('block05__movie1');
             
-        }
-    });
+            const posterWrapper = document.createElement('div');
+            posterWrapper.classList.add('block05__bg');
+
+            const poster = document.createElement('img');
+            poster.src = film.posterUrlPreview;
+            poster.alt = 'постер к фильму';
+
+            posterWrapper.append(poster);
+
+            const shadow = document.createElement('div');
+             shadow.classList.add('block05__shadow') ;
+
+             const descriptionWrapper = document.createElement('div');
+             descriptionWrapper.classList.add ('block05__descr');
+
+             const name = document.createElement('div');
+             name.textContent = film.nameRu;
+
+             const description = document.createElement('div');
+             description.classList.add('block05__text3');
+             description.textContent = 'Loading...';
+
+             descriptionWrapper.append(name, description);
+
+            
+            wrapper.append(posterWrapper, shadow, descriptionWrapper);
+            
+            blockFilmsWrapper.append(wrapper);
+
+            
+            
+    
+            const answer = await getFilmDetails(film.filmId);
+            const filmData = await answer.json();
+    
+            
+            description.textContent = filmData.description
+            if (!filmData.description) {
+                wrapper.remove();
+                
+            }
+        });
+
+    } catch (error) {
+        console.error(error);
+    }
+    
 }
 
 getBlockFilmsData();

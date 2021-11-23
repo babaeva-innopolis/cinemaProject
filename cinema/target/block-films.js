@@ -32,43 +32,61 @@ var getBlockFilmsData = /*#__PURE__*/function () {
       while (1) {
         switch (_context2.prev = _context2.next) {
           case 0:
-            _context2.next = 2;
+            _context2.prev = 0;
+            _context2.next = 3;
             return getTopFilms();
 
-          case 2:
+          case 3:
             answer = _context2.sent;
-            _context2.next = 5;
+            _context2.next = 6;
             return answer.json();
 
-          case 5:
+          case 6:
             data = _context2.sent;
             data.films.forEach( /*#__PURE__*/function () {
               var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(film) {
-                var filmDescId, answer, filmData, descElement;
+                var wrapper, posterWrapper, poster, shadow, descriptionWrapper, name, description, answer, filmData;
                 return regeneratorRuntime.wrap(function _callee$(_context) {
                   while (1) {
                     switch (_context.prev = _context.next) {
                       case 0:
-                        filmDescId = "block-films-des-".concat(film.filmId);
-                        blockFilmsWrapper.innerHTML += "\n        <div class=\"block05__movie1\">\n            <div class=\"block05__bg\">   \n                 <img src=\"".concat(film.posterUrlPreview, "\" alt=\"\">\n             </div>\n             <div class=\"block05__shadow\"></div>\n             <div class=\"block05__descr\">\n                    <div class=\"block05__text2\">").concat(film.nameRu, "</div>\n                    <div class=\"block05__text3\" id=\"").concat(filmDescId, "\"></div>\n             </div>\n        </div>\n        ");
-                        _context.next = 4;
+                        wrapper = document.createElement('div');
+                        wrapper.classList.add('block05__movie1');
+                        posterWrapper = document.createElement('div');
+                        posterWrapper.classList.add('block05__bg');
+                        poster = document.createElement('img');
+                        poster.src = film.posterUrlPreview;
+                        poster.alt = 'постер к фильму';
+                        posterWrapper.append(poster);
+                        shadow = document.createElement('div');
+                        shadow.classList.add('block05__shadow');
+                        descriptionWrapper = document.createElement('div');
+                        descriptionWrapper.classList.add('block05__descr');
+                        name = document.createElement('div');
+                        name.textContent = film.nameRu;
+                        description = document.createElement('div');
+                        description.classList.add('block05__text3');
+                        description.textContent = 'Loading...';
+                        descriptionWrapper.append(name, description);
+                        wrapper.append(posterWrapper, shadow, descriptionWrapper);
+                        blockFilmsWrapper.append(wrapper);
+                        _context.next = 22;
                         return getFilmDetails(film.filmId);
 
-                      case 4:
+                      case 22:
                         answer = _context.sent;
-                        _context.next = 7;
+                        _context.next = 25;
                         return answer.json();
 
-                      case 7:
+                      case 25:
                         filmData = _context.sent;
-                        descElement = document.getElementById(filmDescId);
-                        descElement.innerText = filmData.description;
+                        description.textContent = filmData.description;
 
                         if (!filmData.description) {
-                          blockFilmsWrapper.removeChild(descElement.parentNode.parentNode);
+                          wrapper.remove();
                         }
 
-                      case 11:
+                      case 28:
                       case "end":
                         return _context.stop();
                     }
@@ -80,13 +98,20 @@ var getBlockFilmsData = /*#__PURE__*/function () {
                 return _ref2.apply(this, arguments);
               };
             }());
+            _context2.next = 13;
+            break;
 
-          case 7:
+          case 10:
+            _context2.prev = 10;
+            _context2.t0 = _context2["catch"](0);
+            console.error(_context2.t0);
+
+          case 13:
           case "end":
             return _context2.stop();
         }
       }
-    }, _callee2);
+    }, _callee2, null, [[0, 10]]);
   }));
 
   return function getBlockFilmsData() {
@@ -95,4 +120,3 @@ var getBlockFilmsData = /*#__PURE__*/function () {
 }();
 
 getBlockFilmsData();
-//# sourceMappingURL=block-films.js.map
