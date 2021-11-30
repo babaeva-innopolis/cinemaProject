@@ -8,18 +8,21 @@
 
 ```shell
 npm install  @babel/core @babel/cli
-preset-env --save @babel/polyfill
+@babel/preset-env --save @babel/polyfill
 ```
 
 ## запуск Babael
 
-для работы над проектом необходимо запустить транспиляцию javascript
+
 
 ```shell
 npx babel js -d target 
 ```
 
 ## Запуск babel  с автоматической пересборкой
+
+для работы над проектом необходимо запустить транспиляцию javascript
+
 ```shell
 
 npx babel js -d target --watch --source-maps

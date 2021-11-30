@@ -94,6 +94,13 @@ prizeForm.addEventListener('submit', function(event){
 
     
     }
+    if (!/^[\w]{3,16}@[a-z0-9]{4,10}\.[a-z]{2,3}$/.test(emailValue)) {
+        emailField.setError('не валидный email');
+        emailField.focus();
+        return;
+
+    
+    }
     if (prizeSelect.value === 'none') {
         prizeSelect.classList.add(INPUT_ERROR_CLASS);
         return
@@ -107,9 +114,13 @@ prizeForm.addEventListener('submit', function(event){
     }
     const url = new URL ('http://inno-ijl.ru/multystub/stc-21-03/feedback');
     url.search = new URLSearchParams(data).toString();
-     if (checkbox.checked) {
-            fetch(url.toString());
-    }
+    //  if (checkbox.checked) {
+    //         fetch(url.toString());
+    // }
+    fetch(url.toString())
+    .then(() => {
+        popupToggle();
+    });
     
 });
 

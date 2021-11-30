@@ -6,6 +6,7 @@
     bottom: 0;
     background-color: rgba(51, 51, 51, 0.54);
     z-index: 10;
+    overflow: hidden;
 
 }
 .hidden{
@@ -16,9 +17,11 @@ display: none;
     background-color: #fff;
     max-width: 28rem;
     min-height: 19.6rem;
-  
     border-radius: 2.5rem;
     padding: 2rem;
+    margin-top: 5rem;
+    margin-left: 11rem;
+
 }
 
   

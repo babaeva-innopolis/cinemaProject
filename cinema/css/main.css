@@ -1,22 +1,24 @@
-.block01__header{
+.block01__header
+{
   padding: 1.7rem 0 0;
 } 
  .block01__row{
   display: flex;
   margin-bottom: -3.2rem;    
   }
+ 
   .block01__col1{
     display: flex;
     padding: 0.95rem 1rem 0 3.35rem;
     flex-basis: 21%;
-    /* box-sizing: border-box;   
-     */
+    
   }
   .block01__col2{
     display: flex;
     padding: 0.45rem 0 0 0.75rem;
     flex-basis: 79%;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
   } 
   .logo{
     width: 8.55rem; 
@@ -60,7 +62,7 @@
  }
  .block01__call:hover{
    border-color: #EAEDE2;
-   background: #777776;
+   background: #A3CC40;
  }
  .block01__call:hover svg{
    fill: #fff;
@@ -91,7 +93,7 @@
    position: absolute;
    left: 0;
    bottom: 0;
-   transform: translateY(-70%);
+   transform: translateY(-50%);
    box-shadow: 0 1.35rem 1.95rem rgba(163, 204, 64, 0.18);
   }
  .block01__dropdown a {
@@ -107,7 +109,10 @@
  .block01__lng-wrap:hover .block01__lng svg{
    transform: rotate(180deg);
   }
- 
+  .block01__menu-burger_exit,
+  .block01__menu-burger_entry{
+    display: none;
+  }
  
  .block01__main {
   text-align: center;
@@ -778,11 +783,14 @@ right: 0;
   left: 0.75rem;
   color: #dc3c10;
 }
+.block08__map img{
+  max-width: 48.65rem;
+}
 /* нижний колонтитул */
 
 footer{
 background-color: #A3CC40;
-width: 56.2rem;
+
 color: #FFFFFF;
 }
 footer > .container_footer{
